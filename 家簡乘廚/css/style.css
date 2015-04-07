@@ -1,0 +1,155 @@
+		body{	
+			width:1200px;
+			margin: auto;
+
+		}
+		.content{
+			background-color:#BDC0BA;
+			display: block;
+			
+		}
+
+		#nav{
+    		background-color: #FFFFFB;
+			height: 105px;
+		}
+
+		.nav-list li a {
+    		display: block;
+    		width: 230px;
+    		text-align: center;
+    		background-color: #FFFFFB;
+    		text-decoration: none;
+    		color:black;
+    		font-size: 20px;
+		}		
+		.home{
+				width:450px;
+				background-color: #FFFFFB;
+    		text-decoration: none;
+    		color:black;
+    		padding: 0px ;
+    		border-right: solid 2px black;
+
+		}
+	
+
+		.footer{
+			background-color: gray;
+			height: 100px;
+			text-align: center;
+
+		}
+		.footer div p{
+			display: inline;
+			color:white;
+			font-size: 20px;
+			margin:20px 30px;
+		}
+
+		.footer-info{
+			background-color: gray;
+
+			padding-top: 40px;
+		}
+
+
+		.list{
+			padding:35px 0px;
+			 background-color: #FFFFFB;
+    		text-decoration: none;
+    		border-right: solid 2px black;
+		}
+		.nav-list li {
+		    display: inline;
+		    float:left;
+		}
+		.nav-list ul {
+		    list-style-type: none;
+		    margin: 0;
+		    padding: 0;
+		}
+
+		/* home*/
+
+		
+
+
+		.img {
+			width:500px;
+			text-align: center;
+			float: left;
+		}
+		.img img{
+			vertical-align: center;	
+			margin: 70px 0px 0px 40px;	
+		}
+		.info {
+			width:600px;
+			float: left;
+			margin: 70px -50px 100px 50px;
+		}
+		
+
+		.info p span{
+			color:black
+
+		}
+		.info p {
+			color:white;
+			font-size: 30px;
+			margin: 40px 0px;
+		}
+
+		
+
+		.button{
+			margin-top: 20px;
+			display: block;
+			float:right;
+			padding:10px 20px;
+			color:black;
+			font-size: 40px;
+			background-color: white;
+			border: solid 2px gray; 
+		}
+
+		/*home-end*/
+
+		/*info*/
+
+		.aside{
+			float: left;
+			width:300px;
+			height: 600px;
+			background: url('../img/aside.png') no-repeat center center;
+
+		}
+		.aside ul{
+		    list-style-type: none;
+
+			margin-left: 50px;
+			padding-top:50px; 
+		}
+		.aside ul li {
+			font-size: 30px;
+			margin-top: 20px;
+
+		}
+		.text{
+			float: left;
+			width: 900px;
+			height: 600px;
+			
+			background: url('../img/context.png') no-repeat center center;
+			
+
+		}
+		.text div{
+			
+			
+			margin :50px 100px;
+
+		}
+		/*info-end*/
+

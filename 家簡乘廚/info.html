@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>家 儉 × 廚</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	
+	<script type="text/javascript">
+		$(function(){
+			$("#company").click(function(){
+				$("#title").text("公司簡介");
+				$("#context").text("AAAAA");
+			});
+			$("#chef").click(function(){
+				$("#title").text("廚師簡介");
+				$("#context").text("BBBB");
+			});
+
+		});
+	</script>
+</head>
+<body>
+
+	<div id="nav"> 
+
+	<ul class="nav-list">
+		<li class="nav-list home" ><a href="#"><img src="./img/logo.png" width="450px" height="97px"></a></li>
+		<li class="nav-list list"><a href="#">INFOMATION</a></li>
+		<li class="nav-list list"><a href="#">CATALOGE</a></li>
+		<li class="nav-list list"><a href="#">CONTECT US</a></li>
+	</ul>	
+
+	</div>
+
+
+	<div class="content" style="height: 600px;">
+
+		<div class="aside"> 
+			<ul>
+				<li><a href="#" id="company">公司簡介</a></li>
+				<li><a href="#" id="chef">廚師簡介</a></li>
+				
+				
+			</ul>
+		</div>
+		<div class="text"> 
+			<div>
+			<h1 id="title">公司簡介</h1>
+			<div id="context">
+				AAAAa
+			</div>
+			
+
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="footer">
+		<div class="footer-info">
+		<p>廚師家教股份有限公司 </p> 
+		<p>地址：台北市大安區基隆路四段xx號</p>
+		<p>聯絡電話： 02-2222-0000</p>
+		</div>
+
+	</div>
+
+</body>
+</html>
