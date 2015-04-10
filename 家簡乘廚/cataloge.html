@@ -3,141 +3,164 @@
 <head>
 	<meta charset="utf-8">
 	<title>家 儉 × 廚</title>
-	<style type="text/css">
-		body{	
-			width:1200px;
-			margin: auto;
-
-		}
-		#nav{
-    		background-color: #FFFFFB;
-			height: 105px;
-		}
-
-		.content{
-			background-color:#BDC0BA;
-			height: 600px;
-		}
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		var page=0;
+		//var cuisine=new array
+		$(".selects").click(function(){
+				$("#title").text($(this).text());
+				
+		});
 
 
-		.nav-list li a {
-    		display: block;
-    		width: 230px;
-    		text-align: center;
-    		background-color: #FFFFFB;
-    		text-decoration: none;
-    		color:black;
-    		font-size: 20px;
-			}		
-			.home{
-				width:450px;
-				background-color: #FFFFFB;
-    		text-decoration: none;
-    		color:black;
-    		padding: 0px ;
-    		border-right: solid 2px black;
+		$('.select').hide();
 
-			}
-			.home a img{
-				/*margin-left:20px; */
-
-			}
-		.list{
-			padding:35px 0px;
-			 background-color: #FFFFFB;
-    		text-decoration: none;
-    		border-right: solid 2px black;
-		}
-		.nav-list li {
-		    display: inline;
-		    float:left;
-		}
-		.nav-list ul {
-		    list-style-type: none;
-		    margin: 0;
-		    padding: 0;
-		}
-		.img {
-			width:500px;
-			text-align: center;
-			float: left;
-		}
-		.img img{
-			vertical-align: center;	
-			margin: 70px 0px 0px 40px;	
-		}
-		.info {
-			width:600px;
-			float: left;
-			margin: 70px -50px 100px 50px;
-		}
-		
-
-		.info p span{
-			color:black
+		function showmenu() {
+			$(this).next('ul').toggle();
 
 		}
-		.info p {
-			color:white;
-			font-size: 30px;
-			margin: 40px 0px;
-		}
 
-		.footer{
-			background-color: gray;
-			height: 100px;
-			text-align: center;
+		$('.kind').click(showmenu);	
 
-		}
-		.footer div p{
-			display: inline;
-			color:white;
-			font-size: 20px;
-			margin:20px 30px;
-		}
+		function showCuisine(){
 
-		.footer-info{
-			background-color: gray;
 
-			padding-top: 40px;
-		}
-
-		.button{
-			margin-top: 20px;
-			display: block;
-			float:right;
-			padding:10px 20px;
-			color:black;
-			font-size: 40px;
-			background-color: white;
-			border: solid 2px gray; 
 		}
 
 
-	</style>
+
+});</script>
+	
 </head>
 <body>
 
 	<div id="nav"> 
 
 	<ul class="nav-list">
-		<li class="nav-list home" ><a href="#"><img src="./img/logo.png" width="450px" height="97px"></a></li>
-		<li class="nav-list list"><a href="#">INFOMATION</a></li>
-		<li class="nav-list list"><a href="#">CATALOGE</a></li>
-		<li class="nav-list list"><a href="#">CONTECT US</a></li>
+		<li class="nav-list home" ><a href="./index.html"><img src="./img/logo.png" width="450px" height="97px"></a></li>
+		<li class="nav-list list"><a href="./info.html">INFOMATION</a></li>
+		<li class="nav-list list"><a href="">CATALOGE</a></li>
+		<li class="nav-list list"><a href="./contectUs.html">ORDER</a></li>
 	</ul>	
 
 	</div>
-	<div class="content">
-		<div class="img"> 
-			<img src="./img/cooking.jpg" width="400px" height="400px">
+	<div class="content" style="height: 1000px;">
+
+		<div class="aside"> 
+			<ul>
+				<li class="kind">風格</li>
+					<ul class="select">
+						<li class="selects">中式料理</li>
+						<li class="selects">美式料理</li>
+						<li class="selects">日式料理</li>
+						<li class="selects">歐式料理</li>
+
+					</ul>	
+				
+				<li class="kind">種類</li>
+					<ul class="select">
+						<li class="selects">炸物</li>
+						<li class="selects">煮物</li>
+						<li class="selects">蒸物</li>
+						<li class="selects">湯類</li>
+						<li class="selects">甜品</li>
+					</ul>
+				
+				
+				
+			</ul>
 		</div>
-		<div class="info"> 
-			<p>﹢ 不用出門，在<span>家</span>就能享受五星級料理。</p>
-			<p>－ 獨家教學課程，<span>簡</span>單又好記。</p>
-			<p>× 親自料理，<span>誠</span>意滿分。</p>
-			<p>÷ 成為擄獲家人胃口的頂尖<span>廚</span>師。</p>
-			<a class="button">立即預約！</a>
+		<div class="cataloge"> 
+			<div class="cataloge-context">
+
+				<h1 id="title">中式料理</h1>
+				<hr>	
+				<div id="context">
+					<div class="cuisine">
+						<div>
+							<img src="./img/cooking.jpg" width="120px" height="120px">
+							<h1>宮保雞丁</h1>
+							<table>
+								<tr height="50px">
+									<td  colspan="2" > 
+										說明：ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ
+									</td>
+								</tr>
+								<tr height="50px">
+									<td>難度：ＯＯＯＸＸ</td>
+									<td>自備器具：ＸＸＸＸＸＸＸＸＸＸＸＸ</td>
+								</tr>
+							</table>	
+						</div>
+
+					</div>
+					<div class="cuisine">
+						<div>
+							<img src="./img/cooking.jpg" width="120px" height="120px">
+							<h1>宮保雞丁</h1>
+							<table>
+								<tr height="50px">
+									<td  colspan="2" > 
+										說明：ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ
+									</td>
+								</tr>
+								<tr height="50px">
+									<td>難度：ＯＯＯＸＸ</td>
+									<td>自備器具：ＸＸＸＸＸＸＸＸＸＸＸＸ</td>
+								</tr>
+							</table>	
+						</div>
+						
+					</div>
+					<div class="cuisine">
+						<div>
+							<img src="./img/cooking.jpg" width="120px" height="120px">
+							<h1>宮保雞丁</h1>
+							<table>
+								<tr height="50px">
+									<td  colspan="2" > 
+										說明：ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ
+									</td>
+								</tr>
+								<tr height="50px">
+									<td>難度：ＯＯＯＸＸ</td>
+									<td>自備器具：ＸＸＸＸＸＸＸＸＸＸＸＸ</td>
+								</tr>
+							</table>	
+						</div>
+						
+					</div>
+					<div class="cuisine">
+						<div>
+							<img src="./img/cooking.jpg" width="120px" height="120px">
+							<h1>宮保雞丁</h1>
+							<table>
+								<tr height="50px">
+									<td  colspan="2" > 
+										說明：ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ
+									</td>
+								</tr>
+								<tr height="50px">
+									<td>難度：ＯＯＯＸＸ</td>
+									<td>自備器具：ＸＸＸＸＸＸＸＸＸＸＸＸ</td>
+								</tr>
+							</table>	
+						</div>
+						
+					</div>
+					<div class="page">
+						<ul>
+							<li id="before" ><a href="">&lt;</a></li>
+							<li class="pageNum"><a href="">1</a></li>
+							<li id="after"><a href="">&gt;</a></li>
+						</ul>
+					</div>
+				</div>
+			
+
+			</div>
 		</div>
 		
 	</div>

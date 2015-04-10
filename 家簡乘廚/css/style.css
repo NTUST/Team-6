@@ -1,7 +1,7 @@
 		body{	
 			width:1200px;
 			margin: auto;
-
+			word-break: break-all;
 		}
 		.content{
 			background-color:#BDC0BA;
@@ -126,30 +126,125 @@
 
 		}
 		.aside ul{
+			width:100px;
 		    list-style-type: none;
 
 			margin-left: 50px;
 			padding-top:50px; 
 		}
-		.aside ul li {
+		.aside>ul>li {
+			display: default;
 			font-size: 30px;
 			margin-top: 20px;
+			cursor: pointer;
 
 		}
 		.text{
 			float: left;
 			width: 900px;
 			height: 600px;
-			
+
 			background: url('../img/context.png') no-repeat center center;
 			
 
 		}
-		.text div{
+		.text-context{
 			
 			
-			margin :50px 100px;
+			margin :100px 100px;
 
 		}
 		/*info-end*/
 
+		/*cataloge*/
+
+		.cataloge{
+			float: left;
+			width: 900px;
+			height: 1000px;
+
+			/*background: url('../img/cataloge-context.png') no-repeat center center;*/
+			
+
+		}
+		.cataloge-context{
+			
+			
+			margin :10px 20px;
+
+		}
+		.cataloge-context .cuisine{
+			background: url('../img/cataloge-context.png') no-repeat center center;
+			height: 200px;
+
+
+		}
+		.cuisine div{
+			padding-top: 40px;
+			padding-left: 50px;
+			
+		}
+
+		.cuisine div h1,div img,div table{
+			float: left;
+			display: inline;
+			vertical-align: center;
+			
+		}
+		.cuisine div h1{
+			margin-top: 40px;
+		}
+		.cuisine div table{
+			font-size: 20px;
+		}
+		.select {
+			margin-top: -50px;
+		}
+		.selects {
+			font-size: 20px;
+			margin-left: -40px;
+			margin-top: 20px;
+			cursor: pointer;
+
+		}
+		div.page{
+			width: 800px;
+			text-align: center;
+		}
+		.page ul{
+		    list-style-type: none;
+			text-align: center;
+			margin: 20px auto;
+			float: none;
+		}
+		.page ul li{
+			display: inline;
+			margin-left: 10px;
+			font-size: 20px;
+
+		}
+		/*cataloge-end*/
+		/*contect*/
+
+		.contect{
+			margin: 0px auto;
+			width: 900px;
+			height: 600px;
+			font-size: 20px;
+			background: url('../img/context.png') no-repeat center center;
+			
+		}
+		.contect-context>div{
+			
+			
+			padding:100px 100px;
+
+		}
+		.contect-context .button{
+			margin: 0px auto;
+			font-size: 20px;
+			float: none;
+			text-align: center;
+			cursor: pointer;
+		}
+		/*contect-ned*/
