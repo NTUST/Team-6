@@ -179,6 +179,10 @@
 
 
 		}
+		.cuisine{
+			display: block;
+			cursor: pointer;
+		}
 		.cuisine div{
 			padding-top: 40px;
 			padding-left: 50px;
