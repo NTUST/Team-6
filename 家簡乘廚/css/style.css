@@ -181,7 +181,7 @@
 		}
 		.cuisine{
 			display: block;
-			cursor: pointer;
+			/*cursor: pointer;*/
 		}
 		.cuisine div{
 			padding-top: 40px;
