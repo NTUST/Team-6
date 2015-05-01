@@ -10,7 +10,7 @@
 			
 		}
 
-		#nav{
+		.nav{
     		/*background-color: #FFFFFB;*/
 			height: 105px;
 		}
@@ -27,12 +27,34 @@
 		.nav-list li a:hover{
 			opacity: 0.4;
 		}
+
+		.list{
+			padding:35px 0px;
+		/*	 background-color: #FFFFFB;*/
+    		text-decoration: none;
+    		/*border-right: solid 2px black;*/
+		}
+		.nav-list li {
+		    display: inline;
+		    float:left;
+		}
+		.nav-list ul {
+		    list-style-type: none;
+		    margin: 0;
+		    padding: 0;
+		}
+		.foot{
+			width: 230px;
+		}
+
+
 		.home{
-				width:450px;
+				width:350px;
 		/*		background-color: #FFFFFB;*/
     		text-decoration: none;
     		color:black;
-    		padding: 0px ;
+    		padding-left: 50px ;
+    		margin: 0 auto;
     		/*border-right: solid 2px black;*/
 
 		}
@@ -55,24 +77,14 @@
 			/*background-color: gray;*/
 
 			padding-top: 40px;
+			padding-bottom: 50px;
 		}
 
 
-		.list{
-			padding:35px 0px;
-		/*	 background-color: #FFFFFB;*/
-    		text-decoration: none;
-    		/*border-right: solid 2px black;*/
-		}
-		.nav-list li {
-		    display: inline;
-		    float:left;
-		}
-		.nav-list ul {
-		    list-style-type: none;
-		    margin: 0;
-		    padding: 0;
-		}
+
+
+
+
 
 		/* home*/
 
@@ -116,14 +128,21 @@
 			color:black;
 			font-size: 30px;
 			background-color: yellow;
-			border: solid 2px gray; 
+			/*border: solid 2px gray; */
 			text-decoration: none;
 		}
-
+		.button:hover{
+			color:yellow;
+			background-color: black;
+		}
 		.news
 		{
-			margin: 0 70px 50px 70px;
-			float:center;
+			
+			margin: 0 70px 80px 70px;
+			float:left;
+		}
+		.news a{
+			color: black;
 		}
 		.news_button{
 			margin: 0 0 0 50px ;
@@ -133,9 +152,12 @@
 			color:black;
 			font-size: 20px;
 			background-color: yellow;
-			border: solid 2px gray; 
 			cursor: pointer;
 			text-decoration: none;
+		}
+		.news_button:hover{
+			color:yellow;
+			background-color:black ;
 		}
 		.news_chef {
 			width:500px;
@@ -157,7 +179,7 @@
 			height: 100px;
 			float:center;
 			margin: 10px auto;
-			
+			display: block;
 			
 		}
 		.newschef div{
@@ -170,7 +192,7 @@
 			height: 100px;
 			float:center;
 			margin: 10px auto;
-			
+			display: block;
 			
 		}
 		.newscuisine div{
@@ -226,20 +248,61 @@
 			cursor: pointer;
 
 		}
-		.text{
-			float: left;
+		.aboutus{
+			float: center;
 			width: 900px;
 			height: 600px;
+			margin: 0 auto;	
 
-			background: url('../img/context.png') no-repeat center center;
+			/*background: url('../img/context.png') no-repeat center center;*/
 			
 
 		}
 		.text-context{
 			
 			
-			margin :100px 100px;
+			margin :0 ;
+			width: 900px;
+		}
 
+		.text-context>div{
+			margin: 20px;
+
+		}
+		#title{
+			margin: 0 120px;
+			font-size: 20px;
+		}
+		.why{
+			width:900px;
+			display: inline;
+			float: left;
+			margin-left: 0px;
+			font-size: 15px;
+			line-height: 40px;　　　          　/* 設定文字行距 */
+   			 letter-spacing: 3px;
+		}
+		.why {
+			width:300px;
+		}
+		.context{
+			width: 350px;
+		}
+		.mainlogo{
+			float: right;
+			margin-top: 100px;
+			margin-right: 50px;
+		}
+		.what{
+			padding-right: 500px;
+			font-size: 15px;
+			float: right;
+			line-height: 40px;　　　          　/* 設定文字行距 */
+   			 letter-spacing: 3px;
+
+		}
+		.h2{
+			margin-bottom: 30px;
 		}
 		/*info-end*/
 
