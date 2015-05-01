@@ -2,53 +2,57 @@
 			width:1200px;
 			margin: auto;
 			word-break: break-all;
+			background: url('../img/background.jpg') repeat center center;
 		}
 		.content{
-			background-color:#BDC0BA;
+			/*background-color:#BDC0BA;*/
 			display: block;
 			
 		}
 
 		#nav{
-    		background-color: #FFFFFB;
+    		/*background-color: #FFFFFB;*/
 			height: 105px;
 		}
 
 		.nav-list li a {
     		display: block;
-    		width: 230px;
+    		width: 175px;
     		text-align: center;
-    		background-color: #FFFFFB;
+    		/*background-color: #FFFFFB;*/
     		text-decoration: none;
     		color:black;
     		font-size: 20px;
 		}		
+		.nav-list li a:hover{
+			opacity: 0.4;
+		}
 		.home{
 				width:450px;
-				background-color: #FFFFFB;
+		/*		background-color: #FFFFFB;*/
     		text-decoration: none;
     		color:black;
     		padding: 0px ;
-    		border-right: solid 2px black;
+    		/*border-right: solid 2px black;*/
 
 		}
 	
 
 		.footer{
-			background-color: gray;
+			/*background-color: gray;*/
 			height: 100px;
 			text-align: center;
 
 		}
 		.footer div p{
 			display: inline;
-			color:white;
-			font-size: 20px;
+			color:black;
+			font-size: 10px;
 			margin:20px 30px;
 		}
 
 		.footer-info{
-			background-color: gray;
+			/*background-color: gray;*/
 
 			padding-top: 40px;
 		}
@@ -56,9 +60,9 @@
 
 		.list{
 			padding:35px 0px;
-			 background-color: #FFFFFB;
+		/*	 background-color: #FFFFFB;*/
     		text-decoration: none;
-    		border-right: solid 2px black;
+    		/*border-right: solid 2px black;*/
 		}
 		.nav-list li {
 		    display: inline;
@@ -87,7 +91,7 @@
 		.info {
 			width:600px;
 			float: left;
-			margin: 70px -50px 100px 50px;
+			margin: 70px -100px 100px 100px;
 		}
 		
 
@@ -96,23 +100,106 @@
 
 		}
 		.info p {
-			color:white;
-			font-size: 30px;
-			margin: 40px 0px;
+			color:black;
+			font-size: 20px;
+			margin: 40px 0px 40px 50px;
 		}
 
 		
 
 		.button{
 			margin-top: 20px;
+			margin-left: 50px;
 			display: block;
-			float:right;
-			padding:10px 20px;
+			float:left;
+			padding:5px 20px;
 			color:black;
-			font-size: 40px;
-			background-color: white;
+			font-size: 30px;
+			background-color: yellow;
 			border: solid 2px gray; 
+			text-decoration: none;
 		}
+
+		.news
+		{
+			margin: 0 70px 50px 70px;
+			float:center;
+		}
+		.news_button{
+			margin: 0 0 0 50px ;
+			display: block;
+			float: left;
+			padding:1px 10px;
+			color:black;
+			font-size: 20px;
+			background-color: yellow;
+			border: solid 2px gray; 
+			cursor: pointer;
+			text-decoration: none;
+		}
+		.news_chef {
+			width:500px;
+			margin: 0px 10px;
+			float:left;
+			border-right: solid 2px black;
+			border-left: solid 2px black;
+		}
+		.news_cuisine {
+			width:500px;
+			margin: 0px 10px;
+			float:left;
+			border-right: solid 2px black;
+			border-left: solid 2px black;
+		}
+		.newschef
+		{
+			width:400px;
+			height: 100px;
+			float:center;
+			margin: 10px auto;
+			
+			
+		}
+		.newschef div{
+			float:left;
+			margin-left: 10px;
+		}
+		.newscuisine
+		{
+			width:400px;
+			height: 100px;
+			float:center;
+			margin: 10px auto;
+			
+			
+		}
+		.newscuisine div{
+			float:left;
+			margin-left: 10px;
+		}
+		.chef_name
+		{
+			font-size: 20px;
+
+			
+		}
+		.chef_info
+		{
+			font-size: 15px;
+			
+		}
+		.cuisine_name
+		{
+			font-size: 20px;
+
+			
+		}
+		.cuisine_info
+		{
+			font-size: 15px;
+			
+		}
+
 
 		/*home-end*/
 
