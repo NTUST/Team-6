@@ -3,6 +3,7 @@
 			margin: auto;
 			word-break: break-all;
 			background: url('../img/background.jpg') repeat center center;
+			font-family: Microsoft JhengHei, sans-serif;
 		}
 		.content{
 			/*background-color:#BDC0BA;*/
@@ -402,3 +403,30 @@
 			cursor: pointer;
 		}
 		/*contect-ned*/
+
+
+		/*chef*/
+
+
+		.chef{
+			width:250px;
+			height:400px;
+			border: solid 3px orange;
+			text-align: center;
+			background-color: #255359;
+			padding: 20px 10px 0px 10px;
+			margin: 20px 12px;
+			float: left;
+		}
+
+		.chef>img{
+			margin: 3px 25px;
+			padding-bottom: 15px;
+		}
+		.chef h3{
+			margin: 10px auto;
+		}
+		.chef p, .chef h3 {
+			color: white;
+		}
+		/*chef-end*/
