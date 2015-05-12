@@ -7,7 +7,7 @@
 		}
 		.content{
 			/*background-color:#BDC0BA;*/
-			display: block;
+			/*display: block;*/
 			
 		}
 
@@ -47,7 +47,9 @@
 		.foot{
 			width: 230px;
 		}
-
+		#foot-nav{
+				display: default;
+			}
 
 		.home{
 				width:350px;
@@ -90,7 +92,12 @@
 		/* home*/
 
 		
-
+		#home-content{
+			height:600px;
+		}
+		#news-content{
+			height:400px;
+		}
 
 		.img {
 			width:500px;
@@ -99,7 +106,7 @@
 		}
 		.img img{
 			vertical-align: center;	
-			margin: 70px 0px 0px 40px;	
+			margin: 70px 0px 0px 150px;	
 		}
 		.info {
 			width:600px;
@@ -184,8 +191,8 @@
 			
 		}
 		.newschef div{
-			float:left;
-			margin-left: 10px;
+			float:right;
+			margin-right: 150px;
 		}
 		.newscuisine
 		{
@@ -197,8 +204,8 @@
 			
 		}
 		.newscuisine div{
-			float:left;
-			margin-left: 10px;
+			float:right;
+			margin-right: 150px;
 		}
 		.chef_name
 		{
@@ -228,27 +235,8 @@
 
 		/*info*/
 
-		.aside{
-			float: left;
-			width:300px;
-			height: 600px;
-			background: url('../img/aside.png') no-repeat center center;
 
-		}
-		.aside ul{
-			width:120px;
-		    list-style-type: none;
-
-			margin-left: 50px;
-			padding-top:50px; 
-		}
-		.aside>ul>li {
-			display: default;
-			font-size: 30px;
-			margin-top: 20px;
-			cursor: pointer;
-
-		}
+		
 		.aboutus{
 			float: center;
 			width: 900px;
@@ -308,10 +296,92 @@
 		/*info-end*/
 
 		/*cataloge*/
+		.aside{
+			float: left;
+			width:180px;
+			height: 600px;
+			padding-left: 100px;
+			padding-top: 50px;
+			margin-right: 20px;
+
+		/*	background: url('../img/aside.png') no-repeat center center;*/
+
+		}
+		.aside h3{
+			float: right;
+			padding-top: 5px;
+			padding-left: 0px;
+			margin: 0px 30px 0px 0px;
+		}
+		.aside h3, .aside img{
+		
+		}
+		.aside hr{
+			padding-right: 20px;
+		}
+		.aside div{
+			margin: 30px 10px 30px 20px;
+
+			cursor: pointer;
+		}
+
+		.cuisinelists{
+			display: inline-block;
+			height: 50px;
+		}	
+		.cuisinelists h1{
+			width: 150px;
+			margin: 0;
+		}	
+		.cuisine-kind{
+			display: block;
+    		width: 150px;
+    		margin: 0 10px;
+    		text-align: center;
+    		text-decoration: none;
+    		color:black;
+    		font-size: 30px;
+    		padding: 10px 0;
+
+    		display: inline;
+		    float:left;
+		}
+		.cuisine-list-li   {
+    		display: block;
+    		width: 90px;
+    		margin: 0 5px;
+    		text-align: center;
+    		background-color: #FFFFFF;
+    		cursor: pointer;
+    		text-decoration: none;
+    		color:black;
+    		font-size: 20px;
+    		padding: 10px 0;
+    		border: solid 2px black;
+    		display: inline;
+		    float:left;
+
+		}		
+		.cuisine-list-li:hover{
+			
+			border: solid 2px #FFFFFF;
+			background-color: #000000;
+			color:#FFFFFF;
+		}	
+
+		
+		
+		.cuisinelists ul {
+		    list-style-type: none;
+		    margin: 0;
+		    padding: 0;
+		    float: left;
+
+		}
 
 		.cataloge{
 			float: left;
-			width: 900px;
+			width: 800px;
 			height: 1000px;
 
 			/*background: url('../img/cataloge-context.png') no-repeat center center;*/
@@ -321,36 +391,61 @@
 		.cataloge-context{
 			
 			
-			margin :10px 20px;
+			margin :20px 0px;
 
 		}
-		.cataloge-context .cuisine{
-			background: url('../img/cataloge-context.png') no-repeat center center;
-			height: 200px;
-
+		.cataloge-context .cuisine {
+			border: solid 3px orange;
+			display: block;
+			cursor: pointer;
+		}
+		.cataloge-context .cuisine ,.cuisine a{
+			/*background: url('../img/cataloge-context.png') no-repeat center center;*/
+			height: 180px;
+			
+			
+			background-color: #255359;
+			
+			
+			color: white;
+			margin: 10px 0;
 
 		}
+		.cataloge-context .cuisine:hover,.cuisine a:hover {
+			/*background: url('../img/cataloge-context.png') no-repeat center center;*/
+			
+			border: solid 3px #255359;
+			
+			background-color: orange;
+			
+			
+			color: #255359;
+			
+		}
+		
 		.cuisine{
 			display: block;
 			/*cursor: pointer;*/
 		}
 		.cuisine div{
-			padding-top: 40px;
-			padding-left: 50px;
+			padding-top: 20px;
+			padding-left: 30px;
 			
 		}
 
-		.cuisine div h1,div img,div table{
+		.cuisine div h1,.cuisine div img,.cuisine div table{
 			float: left;
 			display: inline;
 			vertical-align: center;
 			
 		}
-		.cuisine div h1{
-			margin-top: 40px;
+		.cuisine h1{
+			margin: 8px 10px;
 		}
+		
 		.cuisine div table{
 			font-size: 20px;
+			margin-left:10px; 
 		}
 		.select {
 			margin-top: -50px;
@@ -409,7 +504,7 @@
 
 
 		.chef{
-			width:250px;
+			width:200px;
 			height:400px;
 			border: solid 3px orange;
 			text-align: center;
@@ -417,7 +512,15 @@
 			padding: 20px 10px 0px 10px;
 			margin: 20px 12px;
 			float: left;
+			color: orange;
 		}
+		.chef:hover{
+			border: solid 3px #255359;
+			background-color: orange;
+			color:#255359;
+			
+		}
+
 
 		.chef>img{
 			margin: 3px 25px;
@@ -426,7 +529,166 @@
 		.chef h3{
 			margin: 10px auto;
 		}
-		.chef p, .chef h3 {
-			color: white;
-		}
+		
 		/*chef-end*/
+
+		@media(max-width:450px) {
+			body{	
+				width:auto;
+				margin: 0;
+				
+				background: url('../img/background.jpg') repeat center center;
+				font-family: Microsoft JhengHei, sans-serif;
+			}
+			.home{
+				width:350px;
+		/*		background-color: #FFFFFB;*/
+	    		text-decoration: none;
+	    		color:black;
+	    		padding-left: 0px ;
+	    		margin: 0 0 0 -10px;
+	    		/*border-right: solid 2px black;*/
+
+			}
+			.nav{
+				float: center;
+
+			}
+			.list{
+				padding: 10px 0px;
+			/*	 background-color: #FFFFFB;*/
+	    		text-decoration: none;
+	    		border-right: solid 1px black;
+	    		border-left: solid 1px black;
+	    		margin: 0 0 0 -5px;
+	    		float: center;
+			}
+			.nav-list li a {
+	    		display: block;
+	    		width: 90px;
+	    		text-align: center;
+	    		/*background-color: #FFFFFB;*/
+	    		text-decoration: none;
+	    		color:black;
+	  	  		font-size: 17px;
+			}	
+			#foot-nav{
+				display: none;
+			}
+			.footer div p{
+				display: list-item;
+				color:black;
+				font-size: 10px;
+				margin:20px 30px;
+			}
+			.footer{
+			/*background-color: gray;*/
+				height: 100px;
+				text-align: center;
+				margin: -50px 0;
+			}
+			/*home*/
+			#home-content{
+				height:1000px;
+			}
+			
+			.info {
+				width:600px;
+				float: left;
+				margin: 70px 0px 100px 0px;
+			}	
+			.info p {
+				color:black;
+				font-size: 18px;
+				margin: 0px 0px 40px 50px;
+			}
+			.img {
+				width:auto;
+				text-align: center;
+				float: center;
+			}
+			.img img{
+				vertical-align: center;	
+				margin: 30px auto 0px auto;	
+			}
+			#news-content{
+				height:1000px;
+				width: auto ;
+			}
+			.news{
+				padding: 0 ;
+				margin: 0 auto;
+				float:center;
+
+			}
+			.news_chef {
+				width:auto;
+				height: 450px;
+				margin: 0px 10px;
+				padding: 0 10px;
+				float:center;
+
+				border-right: solid 2px black;
+				border-left: solid 2px black;
+			}
+			.news_cuisine {
+				width:auto;
+				height: 450px;
+				margin: 0px 10px;
+				padding: 0 10px;
+				float:center;
+
+				border-right: solid 2px black;
+				border-left: solid 2px black;
+			}
+			.newschef
+			{
+				width:auto;
+				height: 100px;
+				float:center;
+				margin: 10px auto;
+				display: block;
+				
+			}
+			.newschef div{
+				float:right;
+			
+					margin-right: 80px;
+			}
+			.newschef img{
+				
+				margin-left: 30px;
+			}
+
+
+			.newscuisine
+			{
+				width:auto;
+				height: 100px;
+				float:center;
+				margin: 10px auto;
+				display: block;
+				
+			}
+			.newscuisine div{
+				float:right;
+				margin-right: 80px;
+			}
+			.newscuisine img{
+				
+				margin-left: 30px;
+			}
+			.news_button{
+				margin: 0 auto ;
+				display: block;
+				float: center;
+				padding:1px 10px;
+				color:black;
+				font-size: 20px;
+				background-color: yellow;
+				cursor: pointer;
+				text-decoration: none;
+			}
+			
+			
+		}
