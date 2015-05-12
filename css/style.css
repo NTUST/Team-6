@@ -532,7 +532,7 @@
 		
 		/*chef-end*/
 
-		@media(max-width:450px) {
+		@media(max-width:350px) {
 			body{	
 				width:auto;
 				margin: 0;
