@@ -570,7 +570,7 @@
 	    		/*background-color: #FFFFFB;*/
 	    		text-decoration: none;
 	    		color:black;
-	  	  		font-size: 17px;
+	  	  		font-size: 15px;
 			}	
 			#foot-nav{
 				display: none;
@@ -623,7 +623,7 @@
 			}
 			.news_chef {
 				width:auto;
-				height: 450px;
+				height: 500px;
 				margin: 0px 10px;
 				padding: 0 10px;
 				float:center;
@@ -633,7 +633,7 @@
 			}
 			.news_cuisine {
 				width:auto;
-				height: 450px;
+				height: 500px;
 				margin: 0px 10px;
 				padding: 0 10px;
 				float:center;
