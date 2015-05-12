@@ -579,7 +579,7 @@
 			.footer div p{
 				display: list-item;
 				color:black;
-				font-size: 10px;
+				font-size: 15px;
 				margin:20px 30px;
 			}
 			.footer{
@@ -658,10 +658,12 @@
 			}
 			.newschef div{
 				width: auto;
-				float:right;
-				margin-right: auto;
+				float: left;
+				margin-right:auto;
+				margin-left:10px;
 			}
 			.newschef img{
+				float: left;
 				
 				margin-left: 30px;
 			}
@@ -678,11 +680,13 @@
 			}
 			.newscuisine div{
 				width: auto;
-				float:right;
+				float: left;
+
 				margin-right:auto;
+				margin-left:10px;
 			}
 			.newscuisine img{
-				
+				float: left;
 				margin-left: 30px;
 			}
 			.news_button{
