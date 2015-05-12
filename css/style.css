@@ -558,17 +558,18 @@
 				padding: 10px 0px;
 			/*	 background-color: #FFFFFB;*/
 	    		text-decoration: none;
-	    		border-right: solid 1px black;
-	    		border-left: solid 1px black;
+	    		border-right: none;
+	    		border-left: none;
 	    		
 	    		float: left;
 			}
 			.nav-list li a {
 	    		display: block;
-	    		width: 85px;
+	    		width: auto;
 	    		text-align: center;
 	    		/*background-color: #FFFFFB;*/
 	    		text-decoration: none;
+	    		padding: 0 10px;
 	    		color:black;
 	  	  		font-size: 15px;
 			}	
@@ -618,11 +619,13 @@
 				text-align: center;
 			}
 			.news{
-				padding: 0 ;
+				padding: auto ;
 				margin: 0 auto;
 				float:center;
 
 			}
+					
+		
 			.news_chef {
 				width:auto;
 				height: 500px;
@@ -630,8 +633,8 @@
 				padding: 0 ;
 				float:center;
 
-				border-right: solid 2px black;
-				border-left: solid 2px black;
+				border-right:none;
+				border-left: none;
 			}
 			.news_cuisine {
 				width:auto;
@@ -640,8 +643,8 @@
 				padding: 0;
 				float:center;
 
-				border-right: solid 2px black;
-				border-left: solid 2px black;
+				border-right:none;
+				border-left: none;
 			}
 			.newschef
 			{
@@ -656,10 +659,14 @@
 				float:right;
 			
 					margin-right: 80px;
+					border-right: solid 1px black;
+					padding-right: 20px;
 			}
 			.newschef img{
 				
 				margin-left: 30px;
+				border-left: solid 1px black;
+				padding-left: 20px;
 			}
 
 
@@ -675,10 +682,16 @@
 			.newscuisine div{
 				float:right;
 				margin-right: 80px;
+				border-right: solid 1px black;
+				padding-right: 20px;
+				
 			}
 			.newscuisine img{
 				
 				margin-left: 30px;
+				padding-left: 20px;
+
+				border-left: solid 1px black;
 			}
 			.news_button{
 				margin: 0 auto ;
