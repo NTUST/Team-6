@@ -614,6 +614,7 @@
 			#news-content{
 				height:1000px;
 				width: auto ;
+				float:center;
 			}
 			.news{
 				padding: 0 ;
@@ -624,7 +625,7 @@
 			.news_chef {
 				width:auto;
 				height: 500px;
-				margin: auto;
+				margin: 0 auto;
 				padding: 0 ;
 				float:center;
 
@@ -634,7 +635,7 @@
 			.news_cuisine {
 				width:auto;
 				height: 500px;
-				margin: auto;
+				margin: 0 auto;
 				padding: 0;
 				float:center;
 
