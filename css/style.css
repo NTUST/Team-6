@@ -657,9 +657,9 @@
 				
 			}
 			.newschef div{
+				width: auto;
 				float:right;
-			
-					margin-right: 80px;
+				margin-right: 80px;
 			}
 			.newschef img{
 				
@@ -677,6 +677,7 @@
 				
 			}
 			.newscuisine div{
+				width: auto;
 				float:right;
 				margin-right: 80px;
 			}
