@@ -532,7 +532,7 @@
 		
 		/*chef-end*/
 
-		@media(max-width:450px) {
+		@media(max-width:500px) {
 			body{	
 				width:auto;
 				margin: 0;
@@ -565,7 +565,7 @@
 			}
 			.nav-list li a {
 	    		display: block;
-	    		width: 90px;
+	    		width: 85px;
 	    		text-align: center;
 	    		/*background-color: #FFFFFB;*/
 	    		text-decoration: none;
@@ -624,8 +624,8 @@
 			.news_chef {
 				width:auto;
 				height: 500px;
-				margin: 0px 10px;
-				padding: 0 10px;
+				margin: 0px ;
+				padding: 0 ;
 				float:center;
 
 				border-right: solid 2px black;
@@ -634,8 +634,8 @@
 			.news_cuisine {
 				width:auto;
 				height: 500px;
-				margin: 0px 10px;
-				padding: 0 10px;
+				margin: 0px ;
+				padding: 0;
 				float:center;
 
 				border-right: solid 2px black;
