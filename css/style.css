@@ -106,12 +106,12 @@
 		}
 		.img img{
 			vertical-align: center;	
-			margin: 70px 0px 0px 150px;	
+			margin: 70px 0px 0px 50px;	
 		}
 		.info {
 			width:600px;
 			float: left;
-			margin: 70px -100px 100px 100px;
+			margin: 70px -100px 100px 120px;
 		}
 		
 
@@ -577,7 +577,8 @@
 				display: none;
 			}
 			.footer div p{
-				display: list-item;
+				display: block;
+				text-decoration: none;
 				color:black;
 				font-size: 15px;
 				margin:20px 30px;
