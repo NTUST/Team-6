@@ -560,8 +560,8 @@
 	    		text-decoration: none;
 	    		border-right: solid 1px black;
 	    		border-left: solid 1px black;
-	    		margin: 0 0 0 -5px;
-	    		float: center;
+	    		margin: 0 0 0 -10px;
+	    		float: left;
 			}
 			.nav-list li a {
 	    		display: block;
@@ -624,7 +624,7 @@
 			.news_chef {
 				width:auto;
 				height: 500px;
-				margin: 0px ;
+				margin: auto;
 				padding: 0 ;
 				float:center;
 
@@ -634,7 +634,7 @@
 			.news_cuisine {
 				width:auto;
 				height: 500px;
-				margin: 0px ;
+				margin: auto;
 				padding: 0;
 				float:center;
 
