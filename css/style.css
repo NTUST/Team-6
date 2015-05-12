@@ -616,6 +616,7 @@
 				height:1000px;
 				width: auto ;
 				float:center;
+				margin: 0 auto;
 				text-align: center;
 			}
 			.news{
@@ -629,22 +630,22 @@
 			.news_chef {
 				width:auto;
 				height: 500px;
-				margin: 0 auto;
+				margin: 0 20px;
 				padding: 0 ;
 				float:center;
 
-				border-right:none;
-				border-left: none;
+				border-right: solid 2px black;
+				border-left: solid 2px black;
 			}
 			.news_cuisine {
 				width:auto;
 				height: 500px;
-				margin: 0 auto;
+				margin: 0 20px;
 				padding: 0;
 				float:center;
 
-				border-right:none;
-				border-left: none;
+				border-right: solid 2px black;
+				border-left: solid 2px black;
 			}
 			.newschef
 			{
@@ -659,14 +660,10 @@
 				float:right;
 			
 					margin-right: 80px;
-					border-right: solid 1px black;
-					padding-right: 20px;
 			}
 			.newschef img{
 				
 				margin-left: 30px;
-				border-left: solid 1px black;
-				padding-left: 20px;
 			}
 
 
@@ -682,19 +679,13 @@
 			.newscuisine div{
 				float:right;
 				margin-right: 80px;
-				border-right: solid 1px black;
-				padding-right: 20px;
-				
 			}
 			.newscuisine img{
 				
 				margin-left: 30px;
-				padding-left: 20px;
-
-				border-left: solid 1px black;
 			}
 			.news_button{
-				margin: 0 auto ;
+				margin: 20px auto ;
 				display: block;
 				float: center;
 				padding:1px 10px;
