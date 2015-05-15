@@ -11,9 +11,10 @@
 			
 		}
 
-		.nav{
+		#nav{
     		/*background-color: #FFFFFB;*/
 			height: 105px;
+			display: block;
 		}
 
 		.nav-list li a {
@@ -240,7 +241,7 @@
 		.aboutus{
 			float: center;
 			width: 900px;
-			height: 600px;
+			height: 800px;
 			margin: 0 auto;	
 
 			/*background: url('../img/context.png') no-repeat center center;*/
@@ -293,6 +294,37 @@
 		.h2{
 			margin-bottom: 30px;
 		}
+
+
+
+		.member{
+			width:200px;
+			height:300px;
+			border: solid 3px orange;
+			text-align: center;
+			background-color: #255359;
+			padding: 20px 10px 0px 10px;
+			margin: 20px 12px;
+			float: left;
+			color: orange;
+		}
+		.member:hover{
+			border: solid 3px #255359;
+			background-color: orange;
+			color:#255359;
+			
+		}
+
+
+		.member>img{
+			margin: 3px 25px;
+			padding-bottom: 15px;
+		}
+		.member h3{
+			margin: 10px auto;
+		}
+
+
 		/*info-end*/
 
 		/*cataloge*/
@@ -474,21 +506,34 @@
 
 		}
 		/*cataloge-end*/
+
 		/*contect*/
 
 		.contect{
 			margin: 0px auto;
-			width: 900px;
+			width: 1000px;
 			height: 600px;
 			font-size: 20px;
-			background: url('../img/context.png') no-repeat center center;
+			/*background: url('../img/context.png') no-repeat center center;*/
 			
 		}
 		.contect-context>div{
 			
 			
-			padding:100px 100px;
+			/*padding:100px 100px;*/
 
+		}
+		.contectus-title{
+			display: block;
+			background-color: white;
+			
+			padding: 5px;
+			width: 100px;
+
+		}
+		.contect-list{
+			margin: 0 auto;
+			float: center;
 		}
 		.contect-context .button{
 			margin: 0px auto;
@@ -496,6 +541,52 @@
 			float: none;
 			text-align: center;
 			cursor: pointer;
+		}
+		
+		.country-list{
+			display: inline-block;
+			list-style-type: none;
+		    margin: 0;
+		    padding: 0;
+		    float: center;
+		}
+		.contect-list>li{
+			margin: 30px 0;
+		}
+		.contect-list h4{
+			margin-left: 20px;
+		}
+		.contect-list p{
+			font-size: 15px;
+			margin-left: 20px;
+		}
+		.country-list-li   {
+    		display: block;
+    		width: 140px;
+    		margin: 0 5px;
+    		text-align: center;
+    		background-color: #255359;
+    		cursor: pointer;
+    		text-decoration: none;
+    		color:orange;
+    		font-size: 20px;
+    		padding: 10px 0;
+    		border:  solid 3px orange;
+    		display: inline;
+		    float:left;
+
+		}	
+		
+		.country-list-li:hover{
+			
+			border: solid 3px #255359;
+			background-color: orange;
+			color:#255359;
+		}		
+		.Greetword{
+			margin: 50px auto;
+			color:orange;
+			text-align: center;
 		}
 		/*contect-ned*/
 
