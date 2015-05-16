@@ -4,13 +4,15 @@
 	<meta charset="utf-8">
 	<title>家 儉 × 廚</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/mobileStyle.css">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	
 
 </head>
 <body>
 
-	<div class="nav"> 
+	<div id="nav"> 
 
 	<ul class="nav-list">
 		<li class="nav-list home" ><a href="./index.html"><img src="./img/logo.png" width="350px" height="70px"></a></li>
@@ -23,19 +25,12 @@
 	</div>
 
 
-	<div class="content" style="height: 1450px;">
+	<div class="content"  id="about-content" >
 
-		<!--div class="aside"> 
-			<ul>
-				<li id="company">公司簡介</li>
-				<li id="chef">廚師簡介</li>
-				
-				
-			</ul>
-		</div-->
-		<div  id="title">
-			<h1 >About Us</h1>
-		</div>
+		
+		<div class="contect"> 
+			<h5  class="about-title">About Us</h5>
+		
 
 		<div class="aboutus"> 
 			<div class="text-context">
@@ -53,7 +48,7 @@
 					</div>
 
 				</div>
-				<img  class="mainlogo" src="./img/main_logo.png" width="300px" height="300px">
+				<img  class="mainlogo pc" src="./img/main_logo.png" width="300px" height="300px">
 			
 				<div class="what">
 						<h2 class="title">我們的服務</h2>
@@ -70,8 +65,12 @@
 			</div>
 		</div>
 
-		<section class="members" style="padding:0 100px;">
-			<h1 style="font-size:30px;">服務團隊</h1>
+		<div class="members " >
+
+			<h5  class="about-title">服務團隊</h5>
+			<div>
+
+
 			<a style="text-decoration:none;"href="https://www.facebook.com/lincharlie8" target="new">
 				<div class="member">
 
@@ -80,44 +79,46 @@
 				<h3>林佳翰</h3>
 				<p>負責職務：瘋狂手刻CSS</p>
 				
-			</div>
+				</div>
 			</a>
-		<a style="text-decoration:none;"href="https://www.facebook.com/profile.php?id=100001271818927" target="new">
-			<div class="member">
 
-				<img src="./img/member2.jpg" width="150px" height="150px">
+			<a style="text-decoration:none;"href="https://www.facebook.com/profile.php?id=100001271818927" target="new">
+				<div class="member">
 
-				<h3>陳儀玲</h3>
-					<p>負責職務：CODING</p>
+					<img src="./img/member2.jpg" width="150px" height="150px">
+
+					<h3>陳儀玲</h3>
+						<p>負責職務：CODING</p>
+				</div>
+			</a>
+			<a style="text-decoration:none;"href="https://www.facebook.com/profile.php?id=100000282688060" target="new">
+				<div class="member">
+
+					<img src="./img/member3.jpg" width="150px" height="150px">
+
+					<h3>林美馨</h3>
+						<p>負責職務：規劃＆DATA整理</p>
+				</div>
+			</a>
+			<a style="text-decoration:none;"href="hhttps://www.facebook.com/lu.wan.12" target="new">
+				<div class="member">
+
+					<img src="./img/member4.jpg" width="150px" height="150px">
+
+					<h3>洪琬茹</h3>
+						<p>負責職務：行銷宣傳＆DATA收集</p>
+				</div>
+			</a>
 			</div>
-		</a>
-		<a style="text-decoration:none;"href="https://www.facebook.com/profile.php?id=100000282688060" target="new">
-			<div class="member">
-
-				<img src="./img/member3.jpg" width="150px" height="150px">
-
-				<h3>林美馨</h3>
-					<p>負責職務：規劃＆DATA整理</p>
-			</div>
-		</a>
-		<a style="text-decoration:none;"href="hhttps://www.facebook.com/lu.wan.12" target="new">
-			<div class="member">
-
-				<img src="./img/member4.jpg" width="150px" height="150px">
-
-				<h3>洪琬茹</h3>
-					<p>負責職務：行銷宣傳＆DATA收集</p>
-			</div>
-		</a>
-
+		</div>
 	</div>
-
-	<div class="nav"> 
+	</div>
+	<div class="nav" id="foot-nav"> 
 
 	<ul class="nav-list">
 		<li class="nav-list list foot" ><a href="./index.html">Home</a></li>
 		<li class="nav-list list foot"><a href="./info.html">About US</a></li>
-		<li class="nav-list list foot"><a href="./info.html">Our Chef</a></li>
+		<li class="nav-list list foot"><a href="./chef.html">Our Chef</a></li>
 		<li class="nav-list list foot"><a href="./cataloge.html">Catalogy</a></li>
 		<li class="nav-list list foot"><a href="./contectUs.html">Order</a></li>
 	</ul>	

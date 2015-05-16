@@ -234,9 +234,18 @@
 
 		/*home-end*/
 
+
+
+
+
+
+
+
 		/*info*/
 
-
+		#about-content{
+			height:12r00px;
+		}
 		
 		.aboutus{
 			float: center;
@@ -246,6 +255,14 @@
 
 			/*background: url('../img/context.png') no-repeat center center;*/
 			
+
+		}
+		.about-title{
+			display: block;
+			background-color: white;
+			
+			padding: 5px;
+			width: 120px;
 
 		}
 		.text-context{
@@ -303,7 +320,7 @@
 			border: solid 3px orange;
 			text-align: center;
 			background-color: #255359;
-			padding: 20px 10px 0px 10px;
+			padding: 20px 5px 0px 5px;
 			margin: 20px 12px;
 			float: left;
 			color: orange;
@@ -528,7 +545,7 @@
 			background-color: white;
 			
 			padding: 5px;
-			width: 100px;
+			width: 120px;
 
 		}
 		.contect-list{
@@ -623,16 +640,19 @@
 		
 		/*chef-end*/
 
-		@media(max-width:500px) {
+		@media(max-width:700px) {
+			.pc{
+				display: none;
+			}
 			body{	
-				width:auto;
+				width:100%;
 				margin: 0;
 				
 				background: url('../img/background.jpg') repeat center center;
 				font-family: Microsoft JhengHei, sans-serif;
 			}
 			.home{
-				width:350px;
+				width:100%;
 		/*		background-color: #FFFFFB;*/
 	    		text-decoration: none;
 	    		color:black;
@@ -641,8 +661,11 @@
 	    		/*border-right: solid 2px black;*/
 
 			}
-			.nav{
+			#nav{
+
+
 				float: center;
+				margin: 0 auto;
 
 			}
 			.list{
@@ -652,15 +675,25 @@
 	    		border-right: none;
 	    		border-left: none;
 	    		
-	    		float: left;
+	    		float: center;
+			}
+			.nav-list{
+				margin-left: -5px;
+			}
+			.list {
+				width: 25%;
+			    display: inline;
+			    float:left;
+
 			}
 			.nav-list li a {
 	    		display: block;
-	    		width: auto;
+	    		width: 100%;
 	    		text-align: center;
 	    		/*background-color: #FFFFFB;*/
 	    		text-decoration: none;
-	    		padding: 0 10px;
+	    		
+
 	    		color:black;
 	  	  		font-size: 15px;
 			}	
@@ -680,9 +713,19 @@
 				text-align: center;
 				margin: -50px 0;
 			}
+
+			.contect{
+				margin: 0px auto;
+				width: auto;
+				height: 600px;
+				font-size: 20px;
+				/*background: url('../img/context.png') no-repeat center center;*/
+				
+			}
+
 			/*home*/
 			#home-content{
-				height:1000px;
+				height:900px;
 			}
 			
 			.info {
@@ -782,7 +825,7 @@
 				margin-left: 30px;
 			}
 			.news_button{
-				margin: 20px 0 ;
+				margin: 20px 50px ;
 				display: block;
 				float: right;
 				padding:1px 10px;
@@ -793,5 +836,35 @@
 				text-decoration: none;
 			}
 			
-			
+			/*home-end*/
+
+			/*info*/
+
+			#about-content{
+				height:2350px;
+			}
+			.aboutus{
+				width: auto;
+				margin: 0 auto;
+			}
+			.what{
+				float:left;
+				padding: 0;
+			}
+			.members{
+				width: auto;
+				margin: 0 auto;
+			}
+			.members .member{
+				 
+				width: 80%;
+				margin: 10px 5%;
+			}
+			.text-context{
+				
+				
+				margin :0 ;
+				width: auto;
+			}
+			/*info-end*/
 		}
