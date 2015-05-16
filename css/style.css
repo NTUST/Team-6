@@ -919,7 +919,7 @@
 				width: 100%;
 			}
 			#context{
-				width:350px;
+				width:auto;
 				margin: 0 auto;
 			}
 			.cuisine div table {
@@ -930,6 +930,6 @@
 			.cuisine div h1 {
 			  margin: 25px 10px;
 			}
-			
+
 				/*catalog-end*/
 		}
