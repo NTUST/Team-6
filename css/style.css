@@ -242,9 +242,9 @@
 
 
 		/*info*/
-
+		
 		#about-content{
-			height:12r00px;
+			height:1300px;
 		}
 		
 		.aboutus{
@@ -695,7 +695,7 @@
 	    		
 
 	    		color:black;
-	  	  		font-size: 15px;
+	  	  		font-size: 13px;
 			}	
 			#foot-nav{
 				display: none;
@@ -858,7 +858,7 @@
 			.members .member{
 				 
 				width: 80%;
-				margin: 10px 5%;
+				margin: 10px 10%;
 			}
 			.text-context{
 				
