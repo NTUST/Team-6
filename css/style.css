@@ -684,7 +684,7 @@
 				width: 25%;
 			    display: inline;
 			    float:left;
-
+			    font-size: 10px;
 			}
 			.nav-list li a {
 	    		display: block;
