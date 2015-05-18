@@ -20,23 +20,26 @@ $(function(){
 			//alert($(this).attr("country"));
 			showMenu($(this).attr("country") , "肉類");
 			$(".ciusine-country").text($(this).attr("country"));
+			$(".ciusine-country").attr("country",$(this).attr("country"));
 		});
 		$(".cuisine-list-li").click(function(){
 			var country=$(".ciusine-country").text();
 			var kind=$(this).text();
-			alert("C:"+country +" K:"+kind);
+			
+			showMenu(country , kind);
 		});
+
 		$('#countryselect').change(function() {
 		  
-		    var val = $('#countryselect').val();
-			 alert(val);
-		    
+		    var country = $('#countryselect').val();
+			
+		    showMenu(country, "肉類");
 		});
 		$('#catalogyselect').change(function() {
 		  	var country=$("#countryselect").val();
 			
-		    var val = $('#catalogyselect').val();
-			 alert(country+"+"+val);
+		    var kind = $('#catalogyselect').val();
+			showMenu(country , kind);
 		    
 		});
 		
@@ -79,6 +82,7 @@ $(function(){
 	}
 
 	function showMenu(country , kind){
+			$(".cuisine").remove();
 			$.get("./cuision/"+ country+"/"+kind +"/cata.txt", function(data){
 
 				hash = data.split("\n");
@@ -87,7 +91,7 @@ $(function(){
 				for (var i = 0 ; i < hash.length ; i++){
 					var cata = hash[i].split(";");
 					var difficulty="";
-					menu += "<div class=\"cuisine various\" data-fancybox-type=\"iframe\" href=\"./index.html\">";
+					menu += "<div class=\"cuisine various\" data-fancybox-type=\"iframe\" href=\"./fancybox.html?country=" + country +"&kind=" + kind + "&index=" + i +"\" >";
 					menu += "<div>";
 								
 					menu += "<img src=\"./cuision/"+ country+"/"+kind +"/"+ cata[0] + ".jpg\" width=\"150px\" height=\"150px\">";
