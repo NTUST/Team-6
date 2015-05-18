@@ -8,72 +8,8 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script type="text/javascript" src="./js/jquery.fancybox.js"></script>
         <script type="text/javascript" src="./js/fancybox.js"></script>
+        <script type="text/javascript" src="./js/tab.js"></script>
   <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
-	
-	<script type="text/javascript">
-
-	$(function(){
-
-		$(".counrty-select").click(function(){
-			alert($(this).attr("country"));
-			$(".ciusine-country").text($(this).attr("country"));
-		});
-		$(".cuisine-list-li").click(function(){
-			var country=$(".ciusine-country").text();
-			var kind=$(this).text();
-			alert("C:"+country +" K:"+kind);
-		});
-		$('#countryselect').change(function() {
-		  
-		    var val = $('#countryselect').val();
-			 alert(val);
-		    
-		});
-		$('#catalogyselect').change(function() {
-		  	var country=$("#countryselect").val();
-			
-		    var val = $('#catalogyselect').val();
-			 alert(country+"+"+val);
-		    
-		});
-		
-		var page=0;
-		//var cuisine=new array
-		$(".selects").click(function(){
-				$("#title").text($(this).text());
-				
-		});
-
-
-		$('.select').hide();
-
-		function showmenu() {
-			$(this).next('ul').toggle();
-
-		}
-
-		$('.kind').click(showmenu);	
-
-		function showCuisine(){
-
-
-		}
-			
-	$(".various").fancybox({
-				maxWidth	: 1000,
-				maxHeight	: 600,
-				fitToView	: false,
-				width 		:'100%',
-				height 		:'100%',
-				autoSize	: false,
-				closeClick	: false,
-				openEffect	: 'none',
-				closeEffect	: 'none',
-				scrollbar:'auto'
-			});
-
-
-	});</script>
 	
 </head>
 <body>
@@ -95,15 +31,15 @@
 			
 				<h2>東洋料理</h2>	
 				<hr>
-				<div class="counrty-select" country="台灣菜">
+				<div class="counrty-select" country="台灣">
 					<img src="./img/chef01.jpg" width="30px" height="30px">
 					<h3>台灣菜</h3>
 				</div>
-				<div class="counrty-select"country="韓國菜">
+				<div class="counrty-select"country="韓國">
 					<img src="./img/chef01.jpg" width="30px" height="30px">
 					<h3>韓國菜</h3>
 				</div>
-				<div  class="counrty-select" country="日本菜">
+				<div  class="counrty-select" country="日本">
 					<img src="./img/chef01.jpg" width="30px" height="30px">
 					<h3>日本菜</h3>
 				</div>	
@@ -112,15 +48,15 @@
 
 			<h2>西洋料理</h2>	
 			<hr>
-			<div  class="counrty-select" country="日本菜">
+			<div  class="counrty-select" country="法國">
 				<img src="./img/chef01.jpg" width="30px" height="30px">
 				<h3>法國菜</h3>
 			</div>
-			<div class="counrty-select" country="日本菜">
+			<div class="counrty-select" country="義大利">
 				<img src="./img/chef01.jpg" width="30px" height="30px">
 				<h3>義大利菜</h3>
 			</div>
-			<div class="counrty-select" country="日本菜">
+			<div class="counrty-select" country="美國">
 				<img src="./img/chef01.jpg" width="30px" height="30px">
 				<h3>美國菜</h3>
 			</div>
@@ -176,104 +112,7 @@
 
 
 				<div id="context">
-					<div class="cuisine various" data-fancybox-type="iframe" href="./index.html">
-						<div class=" " >
-							
-							<img src="./img/cooking.jpg" width="150px" height="150px">
-							<h1>宮保雞丁</h1>
-							<table>
-								<tr height="50px">
-									<td>難度：ＯＯＯ</td>
-									
-								</tr>									
-								<tr class="pc" height="50px">
-									<td  colspan="2" > 
-										ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ
-									</td>
-								</tr>
-							</table>	
-						</div>
-					</div>
-					<div class="cuisine various" data-fancybox-type="iframe" href="./index.html">
-						<div class=" " >
-							
-							<img src="./img/cooking.jpg" width="150px" height="150px">
-							<h1>宮保雞丁</h1>
-							<table>
-								<tr height="50px">
-									<td>難度：ＯＯＯ</td>
-									
-								</tr>									
-								<tr class="pc" height="50px">
-									<td  colspan="2" > 
-										ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ
-									</td>
-								</tr>
-							</table>	
-						</div>
-					</div>
-					<div class="cuisine various" data-fancybox-type="iframe" href="./index.html">
-						<div class=" " >
-							
-							<img src="./img/cooking.jpg" width="150px" height="150px">
-							<h1>宮保雞丁</h1>
-							<table>
-								<tr height="50px">
-									<td>難度：ＯＯＯ</td>
-									
-								</tr>									
-								<tr  class="pc" height="50px">
-									<td  colspan="2" > 
-										ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ
-									</td>
-								</tr>
-							</table>	
-						</div>
-					</div>
-					<div class="cuisine various" data-fancybox-type="iframe" href="./index.html">
-						<div class=" " >
-							
-							<img src="./img/cooking.jpg" width="150px" height="150px">
-							<h1>宮保雞丁</h1>
-							<table>
-								<tr height="50px">
-									<td>難度：ＯＯＯ</td>
-									
-								</tr>									
-								<tr class="pc" height="50px">
-									<td  colspan="2" > 
-										ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ
-									</td>
-								</tr>
-							</table>	
-						</div>
-					</div>
-					<div class="cuisine " >
-						<div class="various " data-fancybox-type="iframe" href="./index.html">
-							
-							<img src="./img/cooking.jpg" width="150px" height="150px">
-							<h1>宮保雞丁</h1>
-							<table>
-								<tr height="50px">
-									<td>難度：ＯＯＯ</td>
-									
-								</tr>									
-								<tr class="pc" height="50px">
-									<td  colspan="2" > 
-										ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ
-									</td>
-								</tr>
-							</table>	
-						</div>
-					</div>
-
-					<!--div class="page">
-						<ul>
-							<li id="before" ><a href="">&lt;</a></li>
-							<li class="pageNum"><a href="">1</a></li>
-							<li id="after"><a href="">&gt;</a></li>
-						</ul>
-					</div-->
+					
 				</div>
 			
 

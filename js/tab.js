@@ -15,6 +15,63 @@ $(function(){
 	}
 	window.onload=init;
 
+	$(function(){
+
+		$(".counrty-select").click(function(){
+			//alert($(this).attr("country"));
+			showMenu($(this).attr("country") , "肉類");
+			$(".ciusine-country").text($(this).attr("country"));
+		});
+		$(".cuisine-list-li").click(function(){
+			var country=$(".ciusine-country").text();
+			var kind=$(this).text();
+			alert("C:"+country +" K:"+kind);
+		});
+		$('#countryselect').change(function() {
+		  
+		    var val = $('#countryselect').val();
+			 alert(val);
+		    
+		});
+		$('#catalogyselect').change(function() {
+		  	var country=$("#countryselect").val();
+			
+		    var val = $('#catalogyselect').val();
+			 alert(country+"+"+val);
+		    
+		});
+		
+		var page=0;
+		//var cuisine=new array
+		$(".selects").click(function(){
+				$("#title").text($(this).text());
+				
+		});
+
+
+		$('.select').hide();
+
+		function showCuisine(){
+
+
+		}
+			
+	$(".various").fancybox({
+				maxWidth	: 1000,
+				maxHeight	: 600,
+				fitToView	: false,
+				width 		:'100%',
+				height 		:'100%',
+				autoSize	: false,
+				closeClick	: false,
+				openEffect	: 'none',
+				closeEffect	: 'none',
+				scrollbar:'auto'
+			});
+
+
+	});
+
 	function getTxt(src){ //讀txt檔
 
 		$.get(src, function(data){
@@ -22,94 +79,43 @@ $(function(){
 		});
 	}
 
-	$('.team').click(function(){
-			team=$(this).attr('heis');
-			$.get("./img/teacher/"+ team+"/student.txt", function(data){
-			$.get("./img/teacher/"+ team+"/info.txt", function(data1){
-				//alert(data1);
-
-				
-				teamContext="<section class=\"features text-center  "+team+"\" id=\""+team+"\">";
+	function showMenu(country , kind){
+			$.get("../cuision/"+ country+"/"+kind +"/cata.txt", function(data){
 
 				hash = data.split("\n");
-				var hashT = data1.split("\n");
-			
-         	 	teamContext+="<div class=\"container col-md-12\" >";
-           		teamContext+="<div class=\"row\"  >";
-             	teamContext+="<div class=\"col-md-12\" style=\"\">";
+				var menu = "";
+				for (var i = 0 ; i < hash.length ; i++){
+					var cata = hash.split(";");
 
-           	   // teamContext+=" <h1 class=\"arrow\" style=\"color:white; \"><strong>"+team+"</strong></h1>";
-           		teamContext+="<div class=\"row\" style=\"background-color:#242830;\" >";
+					menu += "<div class=\"cuisine various\" data-fancybox-type=\"iframe\" href=\"./index.html\">";
+					menu += "<div>";
+								
+					menu += "<img src=\"./img/"+ cata[0] + ".jpg\" width=\"150px\" height=\"150px\">";
+					menu += "<h1>"+ cata[0] + "</h1>";
+					menu += "<table>";
+					menu += "<tr height=\"50px\">";
+					menu += "<td>難度："+ cata[2] + "</td>";
+					menu += "</tr>"	;					
+					menu += "<tr class=\"pc\" height=\"50px\">";
 
-             	teamContext+="<div class=\"col-md-4\" >";
-                teamContext+="<div  style=\"overflow:hidden;  \">";
+					menu += "<td  colspan=\"2\" > ";
+					var information = cata[1];
+					if (information.length > 26)
+						information.substring(0,25);
+					menu += information +"...";
+					menu += "</td>";
+					menu += "</tr>";
+					menu += "</table>";
+					menu += "</div>";
+					menu += "</div>";
+				}
+				
+        		$("#context").append(menu);
 
-                teamContext+="<img src=\"img/teacher/"+ team+"/photo.jpg\"  style=\" padding-bottom:20px; height:300px;  text-align: center;\">";
-				teamContext+="</div >";
-				teamContext+="</div >";
+       
 
-                teamContext+="<div class=\"text-left col-md-8 \" style=\"  padding-left:20px; padding-bottom:20px; color:#a1a9b0\">";
-                teamContext+="<h1 style=\"color:white; \" >"+ hashT[0]+"</h1>";
-
-                    for(var j=1;j<hashT.length;j++){
-                    	 teamContext+= hashT[j]+"<br>";
-                    }
-                teamContext+="</div>";
-
-                teamContext+="</div>";
-             	
-
-             	teamContext+="<div class=\"col-md-12\" style=\"padding-top:50px; background-color:white;\" >";
-                //for(var k=0;k<4;k++){
-            	for(var i=0;i<hash.length;i++){
-                	
-					hashD = hash[i].split(";");
-
-                	
-					teamContext+="<div class=\"col-md-3 \">";
-                        
-                    teamContext+="<div >";
-                    teamContext+="<a class=\"various \" data-fancybox-type=\"iframe\" href=\"fancybox.html?text="+ hashD[0]+"&page="+hashD[2]+"\">";
-                    teamContext+="<img src=\"img/student/"+ hashD[0]+"/00.png\" heis=\""+ hashD[0]+"\" class=\"icon\">";
-                    teamContext+="</a>";
-                    teamContext+="</div>";
-                    teamContext+="<div>";
-
-
-                    teamContext+="<h2>"+ hashD[1]+"</h2>";
-
-                    
-                    teamContext+="<p>"+ hashD[0]+"</p>";
-                    teamContext+="</div>";
-                    teamContext+="</div>";
-
-                }
-                 // }
-
-
-               // teamContext+="<div class=\"clearfix\"></div>";
-               //	teamContext+=" </div>";
-               	teamContext+=" </div>";
-              
-             	teamContext+=" </div>";
-            	teamContext+="</div>";
-          		teamContext+="</div>";
-        		teamContext+="</section>";
-        		
-        		//$(".features").replaceWith(teamContext);
-        		//$(".features").remove();
-        		$(".portfolio").append(teamContext);
-
-        $('.select_design').attr('href','#'+team);
-			
-
-			$('#'+team).stop().slideDown(1000);
-			$('.teamselect').stop().slideUp(1000);	
-			$('.back').removeClass("hidden");	
-
-			});
-			});
-	});
+		});
+	}
 	
 	$('.back').click(function(){
 			$('.select_design').attr('href','#design');
