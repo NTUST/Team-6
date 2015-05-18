@@ -13,6 +13,30 @@
 	<script type="text/javascript">
 
 	$(function(){
+
+		$(".counrty-select").click(function(){
+			alert($(this).attr("country"));
+			$(".ciusine-country").text($(this).attr("country"));
+		});
+		$(".cuisine-list-li").click(function(){
+			var country=$(".ciusine-country").text();
+			var kind=$(this).text();
+			alert("C:"+country +" K:"+kind);
+		});
+		$('#countryselect').change(function() {
+		  
+		    var val = $('#countryselect').val();
+			 alert(val);
+		    
+		});
+		$('#catalogyselect').change(function() {
+		  	var country=$("#countryselect").val();
+			
+		    var val = $('#catalogyselect').val();
+			 alert(country+"+"+val);
+		    
+		});
+		
 		var page=0;
 		//var cuisine=new array
 		$(".selects").click(function(){
@@ -71,15 +95,15 @@
 			
 				<h2>東洋料理</h2>	
 				<hr>
-				<div>
+				<div class="counrty-select" country="台灣菜">
 					<img src="./img/chef01.jpg" width="30px" height="30px">
 					<h3>台灣菜</h3>
 				</div>
-				<div>
+				<div class="counrty-select"country="韓國菜">
 					<img src="./img/chef01.jpg" width="30px" height="30px">
 					<h3>韓國菜</h3>
 				</div>
-				<div>
+				<div  class="counrty-select" country="日本菜">
 					<img src="./img/chef01.jpg" width="30px" height="30px">
 					<h3>日本菜</h3>
 				</div>	
@@ -88,15 +112,15 @@
 
 			<h2>西洋料理</h2>	
 			<hr>
-			<div>
+			<div  class="counrty-select" country="日本菜">
 				<img src="./img/chef01.jpg" width="30px" height="30px">
 				<h3>法國菜</h3>
 			</div>
-			<div>
+			<div class="counrty-select" country="日本菜">
 				<img src="./img/chef01.jpg" width="30px" height="30px">
 				<h3>義大利菜</h3>
 			</div>
-			<div>
+			<div class="counrty-select" country="日本菜">
 				<img src="./img/chef01.jpg" width="30px" height="30px">
 				<h3>美國菜</h3>
 			</div>
@@ -110,7 +134,7 @@
 				
 				<div class="cuisinelists pc">
 					<ul class="cuisine-list">
-						<li class="cuisine-kind">台灣菜</li>
+						<li class="cuisine-kind ciusine-country">台灣菜</li>
 						<li class="cuisine-list-li">肉類</li>
 						<li class="cuisine-list-li">海鮮</li>
 						<li class="cuisine-list-li">湯類</li>
@@ -125,7 +149,7 @@
 						
 						<li class="cuisine-kind">
 						
-							<select name="country" id="countryselect">
+							<select name="countryselection" id="countryselect">
 								<option value="台灣菜">台灣菜</option>
 								<option value="韓國菜">韓國菜</option>
 								<option value="日本菜">日本菜</option>
@@ -145,7 +169,7 @@
 								<option value="素食">素食</option>
 								<option value="甜點">甜點</option>
 							</select>
-							</li>
+						</li>
 						
 					</ul>	
 				</div>
