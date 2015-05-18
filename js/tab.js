@@ -2,8 +2,7 @@ $(function(){
 
 	var work=["team1","team2"];
 	var hash;
-	var teamContext=" ";
-	var team=" ";
+
 	var node,oldNode,oldvalue;
 	var title;
 	var data;
@@ -80,28 +79,32 @@ $(function(){
 	}
 
 	function showMenu(country , kind){
-			$.get("../cuision/"+ country+"/"+kind +"/cata.txt", function(data){
+			$.get("./cuision/"+ country+"/"+kind +"/cata.txt", function(data){
 
 				hash = data.split("\n");
 				var menu = "";
+				
 				for (var i = 0 ; i < hash.length ; i++){
-					var cata = hash.split(";");
-
+					var cata = hash[i].split(";");
+					var difficulty="";
 					menu += "<div class=\"cuisine various\" data-fancybox-type=\"iframe\" href=\"./index.html\">";
 					menu += "<div>";
 								
-					menu += "<img src=\"./img/"+ cata[0] + ".jpg\" width=\"150px\" height=\"150px\">";
+					menu += "<img src=\"./cuision/"+ country+"/"+kind +"/"+ cata[0] + ".jpg\" width=\"150px\" height=\"150px\">";
 					menu += "<h1>"+ cata[0] + "</h1>";
 					menu += "<table>";
 					menu += "<tr height=\"50px\">";
-					menu += "<td>難度："+ cata[2] + "</td>";
+					for (var i = 0 ; i < parseInt(cata[2]) ; i++){
+						difficulty += "★";
+					}
+					menu += "<td>難度："+ difficulty + "</td>";
 					menu += "</tr>"	;					
 					menu += "<tr class=\"pc\" height=\"50px\">";
 
 					menu += "<td  colspan=\"2\" > ";
 					var information = cata[1];
 					if (information.length > 26)
-						information.substring(0,25);
+						information = information.substring(0,25);
 					menu += information +"...";
 					menu += "</td>";
 					menu += "</tr>";
