@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+		
+		
+
+	<script src="js/modernizr.custom.79639.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="../favicon.ico"> 
+	<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+	 <script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) instead for release -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="./js/jssor.js"></script>
+    <script type="text/javascript" src="./js/jssor.slider.js"></script>
+    <link rel="stylesheet" href="./css/magnify.css">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	
+	
+</head>
+	<body>
+		 
+		 <div id="slider1_container" style="position: relative; top: 10px; left: 0px; width: 1200px;
+        height: 1200px; overflow: hidden;">
+        <!-- Slides Container -->
+        <div class="Photo" u="slides" style="cursor: move; position: absolute; left: 0px; top: 10px; width: 1200px; height: 1114px;
+            overflow: hidden;">
+            
+            
+        </div>
+
+        <!-- Arrow Navigator Skin Begin -->
+        <style>
+            /* jssor slider arrow navigator skin 13 css */
+            /*
+            .jssora13l              (normal)
+            .jssora13r              (normal)
+            .jssora13l:hover        (normal mouseover)
+            .jssora13r:hover        (normal mouseover)
+            .jssora13ldn            (mousedown)
+            .jssora13rdn            (mousedown)
+            */
+            body{
+                background-color: black;
+            }
+            .jssora13l, .jssora13r, .jssora13ldn, .jssora13rdn {
+                position: absolute;
+                cursor: pointer;
+                display: block;
+                background: url(../img/a13.png) no-repeat;
+                overflow: hidden;
+            }
+
+            .jssora13l {
+                background-position: -10px -35px;
+            }
+
+            .jssora13r {
+                background-position: -70px -35px;
+            }
+
+            .jssora13l:hover {
+                background-position: -130px -35px;
+            }
+
+            .jssora13r:hover {
+                background-position: -190px -35px;
+            }
+
+            .jssora13ldn {
+                background-position: -250px -35px;
+            }
+
+            .jssora13rdn {
+                background-position: -310px -35px;
+            }
+        </style>
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora13l" style="width: 40px; height: 50px; top: 123px; left: 30px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora13r" style="width: 40px; height: 50px; top: 123px; right: 30px">
+        </span>
+        <!-- Arrow Navigator Skin End -->
+       
+    </div>
+
+		
+	
+
+
+		<script>
+		//var text="initail";
+		var num;
+		  
+		function getUrlVars()
+		{
+		    var vars = [], hash;
+		    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+		    for(var i = 0; i <hashes.length; i++)
+		    {
+		        hash = hashes[i].split('=');
+		        vars.push(hash[0]);
+		        vars[hash[0]] = hash[1];
+		    }
+		    return vars;
+		}
+				
+		
+
+		$(document).ready(function(){
+           
+			
+		 });
+		
+	
+
+        jQuery(document).ready(function ($) {
+
+            num=1;
+            var output =" ";
+            var conTxt="";
+            conTxt=" ";
+            while(num<=getUrlVars()["page"]){
+
+    
+                    conTxt+="<div><img u=\"image\" src=\"img/student/"+getUrlVars()["text"]+"/"+getUrlVars()["text"]+(num)+".png\" data-magnify-src=\"img/student/"+getUrlVars()["text"]+"/"+getUrlVars()["text"]+(num)+".png\"/></div>";
+                    
+                num++;
+            }
+                    //conTxt+="<div><img u=\"image\" src=\"img/student/end.png\" data-magnify-src=\"img/student/end.png\"/></div>";
+
+                             $(".Photo").append(conTxt);
+            var options = {
+                $AutoPlay: false,
+
+                $PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slideshow is auto playing, default value is false
+
+                $ArrowKeyNavigation: true,   			            //Allows arrow key to navigate or not
+                $SlideWidth: 831,                                   //[Optional] Width of every slide in pixels, the default is width of 'slides' container
+                $SlideHeight: 1114,                                  //[Optional] Height of every slide in pixels, the default is width of 'slides' container
+                $SlideSpacing: 0, 					                //Space between each slide in pixels
+                $DisplayPieces: 2,                                  //Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //The offset position to park slide (this options applys only when slideshow disabled).
+
+                $ArrowNavigatorOptions: {                       //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(parentWidth, 850));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+        <script src="./js/jquery.magnify.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                          //   $('.picture').magnify();
+                //             $('img').magnify();
+
+
+            });
+        </script>
+	</body>
+</html>
