@@ -8,7 +8,7 @@ $(function(){
 	var data;
 	function init(){
 		
-		$('.select_design').attr('href','#design');
+		showMenu($(this).attr("台灣") , "肉類");
 		
 		
 	}

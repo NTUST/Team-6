@@ -617,10 +617,13 @@
 
 
 		/*chef*/
-
+		.chef-content{
+			height: 1100px; 
+			padding:0 100px;
+		}
 
 		.chef{
-			width:200px;
+			width:280px;
 			height:400px;
 			border: solid 3px orange;
 			text-align: center;
@@ -936,4 +939,29 @@
 			}
 
 				/*catalog-end*/
+
+				/*CHEF*/
+
+				.chef-content{
+					height: 2750px; 
+					padding:0 ;
+					margin: 0 auto;
+					float: center;
+				}
+				.chef {
+				  width: 280px;
+				  height: 400px;
+				  border: solid 3px orange;
+				  text-align: center;
+				  background-color: #255359;
+				  padding: 20px 10px 0px 10px;
+				  margin: 20px auto;
+				  float: center;
+				  color: orange;
+				}
+				/*cher-end*/
+				/*order*/
+				.content-mobile{
+					margin: 0 15px;
+				}
 		}
