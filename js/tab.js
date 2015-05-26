@@ -99,7 +99,7 @@ $(function(){
 					var name=cata[0];
 						
 					menu += "<img src=\"./cuision/"+ country+"/"+kind +"/"+ cata[0] + ".jpg\" width=\"150px\" height=\"150px\">";
-					if($(window).width()=>700){	
+					if($(window).width()>=700){	
 						menu += "<h1>"+ cata[0] + "</h1>";
 					}else{
 						menu += "<h3>"+ cata[0] + "</h3>";
