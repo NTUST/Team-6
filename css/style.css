@@ -492,7 +492,7 @@
 
 		.cuisine div h1,.cuisine div img,.cuisine div table{
 			float: left;
-			display: inline;
+			/*display: inline;*/
 			vertical-align: center;
 			
 		}
