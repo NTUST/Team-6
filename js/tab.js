@@ -96,7 +96,7 @@ $(function(){
 					var difficulty="";
 					menu += "<div class=\"cuisine various\" data-fancybox-type=\"iframe\" href=\"./fancybox.html?country=" + country +"&kind=" + kind + "&index=" + i +"\" >";
 					menu += "<div>";
-							alert( cata[0] );	
+							
 					menu += "<img src=\"./cuision/"+ country+"/"+kind +"/"+ cata[0] + ".jpg\" width=\"150px\" height=\"150px\">";
 					menu += "<h1>"+ cata[0] + "</h1>";
 					menu += "<table>";
