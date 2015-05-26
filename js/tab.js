@@ -90,6 +90,7 @@ $(function(){
 				var menu = "";
 				
 				for (var i = 0 ; i < hash.length ; i++){
+					
 					var cata = hash[i].split(";");
 					var difficulty="";
 					menu += "<div class=\"cuisine various\" data-fancybox-type=\"iframe\" href=\"./fancybox.html?country=" + country +"&kind=" + kind + "&index=" + i +"\" >";
