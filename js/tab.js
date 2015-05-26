@@ -88,7 +88,7 @@ $(function(){
 
 				hash = data.split("\n");
 				var menu = "";
-				
+				alert(data);
 				for (var i = 0 ; i < hash.length ; i++){
 					
 					var cata = hash[i].split(";");
