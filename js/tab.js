@@ -90,18 +90,18 @@ $(function(){
 				var menu = "";
 				
 				for (var i = 0 ; i < hash.length ; i++){
-					
+					if(hash[i].indexOf(";")==-1) continue;
 					var cata = hash[i].split(";");
-					alert(cata[0]);
+
 					var difficulty="";
 					menu += "<div class=\"cuisine various\" data-fancybox-type=\"iframe\" href=\"./fancybox.html?country=" + country +"&kind=" + kind + "&index=" + i +"\" >";
 					menu += "<div>";
-								
+							alert( cata[0] );	
 					menu += "<img src=\"./cuision/"+ country+"/"+kind +"/"+ cata[0] + ".jpg\" width=\"150px\" height=\"150px\">";
 					menu += "<h1>"+ cata[0] + "</h1>";
 					menu += "<table>";
 					menu += "<tr height=\"50px\">";
-					for (var i = 0 ; i < parseInt(cata[2]) ; i++){
+					for (var j = 0 ; j < parseInt(cata[2]) ; j++){
 						difficulty += "★";
 					}
 					menu += "<td>難度："+ difficulty + "</td>";
