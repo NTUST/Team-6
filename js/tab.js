@@ -98,7 +98,7 @@ $(function(){
 					menu += "<div>";
 							
 					menu += "<img src=\"./cuision/"+ country+"/"+kind +"/"+ cata[0] + ".jpg\" width=\"150px\" height=\"150px\">";
-					menu += "<h1 style=\"word-wrap:break-word; \">"+ cata[0] + "</h1>";
+					menu += "<h1 style=\"word-break: break-all; \">"+ cata[0] + "</h1>";
 					menu += "<table>";
 					menu += "<tr height=\"50px\">";
 					for (var j = 0 ; j < parseInt(cata[2]) ; j++){
