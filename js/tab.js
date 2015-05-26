@@ -88,10 +88,11 @@ $(function(){
 
 				hash = data.split("\n");
 				var menu = "";
-				alert(data);
+				
 				for (var i = 0 ; i < hash.length ; i++){
 					
 					var cata = hash[i].split(";");
+					alert(cata[0]);
 					var difficulty="";
 					menu += "<div class=\"cuisine various\" data-fancybox-type=\"iframe\" href=\"./fancybox.html?country=" + country +"&kind=" + kind + "&index=" + i +"\" >";
 					menu += "<div>";
