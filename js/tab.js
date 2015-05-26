@@ -8,7 +8,7 @@ $(function(){
 	var data;
 	function init(){
 		
-		showMenu($(this).attr("台灣") , "肉類");
+		showMenu("台灣", "肉類");
 		
 		
 	}
@@ -22,6 +22,7 @@ $(function(){
 			$(".ciusine-country").text($(this).attr("country"));
 			$(".ciusine-country").attr("country",$(this).attr("country"));
 		});
+
 		$(".cuisine-list-li").click(function(){
 			var country=$(".ciusine-country").text();
 			var kind=$(this).text();
