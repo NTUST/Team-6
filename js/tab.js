@@ -99,6 +99,7 @@ $(function(){
 					var name=cata[0];
 						
 					menu += "<img src=\"./cuision/"+ country+"/"+kind +"/"+ cata[0] + ".jpg\" width=\"150px\" height=\"150px\">";
+					
 					if($(window).width()>=700){	
 						menu += "<h1>"+ cata[0] + "</h1>";
 					}else{
@@ -113,10 +114,10 @@ $(function(){
 					menu += "</tr>"	;					
 					menu += "<tr class=\"pc\" height=\"50px\">";
 
-					menu += "<td  colspan=\"2\" > ";
+					menu += "<td  colspan=\"3\" > ";
 					var information = cata[1];
-					if (information.length > 26)
-						information = information.substring(0,25);
+					if (information.length > 28)
+						information = information.substring(0,28);
 					menu += information +"...";
 					menu += "</td>";
 					menu += "</tr>";
