@@ -1,9 +1,15 @@
 $(function(){
 
-	$('.toggle').click(function(){
+	$('.country-toggle').click(function(){
 		$(this).toggleClass("active");
-		$('.toggle > .nav').slideToggle();
+		$('.country-nav').slideToggle();
 		});
-	$('.nav > ul > li:has(ul) > a').append('<div class="arrow-bottom"></div>')
+	$('.country-nav > ul > li:has(ul) > a').append('<div class="arrow-bottom"></div>')
+
+	$('.catalog-toggle').click(function(){
+		$(this).toggleClass("active");
+		$('.catalog-nav').slideToggle();
+		});
+	$('.catalog-nav > ul > li:has(ul) > a').append('<div class="arrow-bottom"></div>')
 
 });
