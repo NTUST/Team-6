@@ -109,17 +109,17 @@
 
 	
 
-		@media(max-device-width:700px) {
+		@media(max-width:700px) {
 			
 			nav{
 				display: none;
 			}	
 			.main{
 				background-color: #255359;
-				width: 100%;
+				width: auto;
 				height: 42px;
-				margin: 0 auto;
-				float: right;
+				margin: 10px auto;
+				float: left;
 				border-radius: 0px;
 			}
 			.country-nav ul{
