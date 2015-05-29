@@ -1,6 +1,6 @@
 $(function(){
 
-	$('.country-toggle').click(function(){
+	$('.country-nav').click(function(){
 		$(this).toggleClass("active");
 		$('.country-nav').slideToggle();
 		});
