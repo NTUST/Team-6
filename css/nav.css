@@ -101,6 +101,7 @@
 			}
 
 			.toggle{
+				width: 50%;
 				display: inline-block;
 				background: #255359;
 				padding: 9px 10px;
