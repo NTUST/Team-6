@@ -1,11 +1,11 @@
-		.nav ul{
+		.catalog-nav ul{
 		
 				margin: 0px 0 10px 0;
 				padding: 0;
 				box-shadow: none ;
 			}
 		
-		.nav li{
+		.catalog-nav li{
 			width: 150px;
 			padding: 0px ;
 			position: relative;
@@ -15,17 +15,17 @@
 			background-color: #255359;
 			opacity: 0.8;
 		}
-		.nav li a{
+		.catalog-nav li a{
 			display: block;
 			padding: 15px 30px;
 			color: #FFF;
 			text-decoration: none;
 		}
 
-		.nav li:hover >a{
+		.catalog-nav li:hover >a{
 			color:#000000;
 		}
-		.nav li:hover ul{
+		.catalog-nav li:hover ul{
 			display: block;
 			right: 0;
 			left: 0;
@@ -33,7 +33,50 @@
 			color:#000000;
 		}
 
-		.nav li ul{
+		.catalog-nav li ul{
+			background-color: #255359;
+			display: none;
+			position: absolute;
+			top: 100%;
+		}
+
+
+		.country-nav ul{
+		
+				margin: 0px 0 10px 0;
+				padding: 0;
+				box-shadow: none ;
+			}
+		
+		.country-nav li{
+			width: 150px;
+			padding: 0px ;
+			position: relative;
+			float: left;
+			color: #FFF;
+			list-style: none;
+			background-color: #255359;
+			opacity: 0.8;
+		}
+		.country-nav li a{
+			display: block;
+			padding: 15px 30px;
+			color: #FFF;
+			text-decoration: none;
+		}
+
+		.country-nav li:hover >a{
+			color:#000000;
+		}
+		.country-nav li:hover ul{
+			display: block;
+			right: 0;
+			left: 0;
+			top: 100%;
+			color:#000000;
+		}
+
+		.country-nav li ul{
 			background-color: #255359;
 			display: none;
 			position: absolute;
@@ -44,7 +87,11 @@
 
 			
 		}
-		.toggle{
+		.country-toggle{
+			display: none;
+		}
+
+		.catalog-toggle{
 			display: none;
 		}
 
@@ -75,32 +122,67 @@
 				float: right;
 				border-radius: 0px;
 			}
-			.nav ul{
+			.country-nav ul{
 		
 				margin: 10px 0 -10px 0;
 				padding: 0;
 				box-shadow: none ;
 			}
-			.nav li{
+			.country-nav li{
 				float: none;
 			}
-			.nav li a{
+			.country-nav li a{
 				padding: 0px 15px;
 				
 			}
-			.nav li:hover ul{
+			.country-nav li:hover ul{
 				position: relative;
 				display: block;
 				background: orange;
 			}
-			.nav li:hover ul li{
+			.country-nav li:hover ul li{
 				background: orange;
 			}
-			.nav li:hover ul li a{
+			.country-nav li:hover ul li a{
 				padding-left: 30px;
 			}
 
-			.toggle{
+
+			.country-nav ul{
+		
+				margin: 10px 0 -10px 0;
+				padding: 0;
+				box-shadow: none ;
+			}
+
+			.catalog-nav li{
+				float: none;
+			}
+			.catalog-nav li a{
+				padding: 0px 15px;
+				
+			}
+			.catalog-nav li:hover ul{
+				position: relative;
+				display: block;
+				background: orange;
+			}
+			.catalog-nav li:hover ul li{
+				background: orange;
+			}
+			.catalog-nav li:hover ul li a{
+				padding-left: 30px;
+			}
+
+
+			.catalog-toggle{
+				width: 50%;
+				display: inline-block;
+				background: #255359;
+				padding: 9px 10px;
+				color:#000;
+			}
+			.country-toggle{
 				width: 50%;
 				display: inline-block;
 				background: #255359;
