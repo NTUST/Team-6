@@ -1,0 +1,114 @@
+		.nav ul{
+		
+				margin: 0px 0 10px 0;
+				padding: 0;
+				box-shadow: none ;
+			}
+		
+		.nav li{
+			width: 150px;
+			padding: 0px ;
+			position: relative;
+			float: left;
+			color: #FFF;
+			list-style: none;
+			background-color: #255359;
+			opacity: 0.8;
+		}
+		.nav li a{
+			display: block;
+			padding: 15px 30px;
+			color: #FFF;
+			text-decoration: none;
+		}
+
+		.nav li:hover >a{
+			color:#000000;
+		}
+		.nav li:hover ul{
+			display: block;
+			right: 0;
+			left: 0;
+			top: 100%;
+			color:#000000;
+		}
+
+		.nav li ul{
+			background-color: #255359;
+			display: none;
+			position: absolute;
+			top: 100%;
+		}
+		#vis{
+			color:#000000;
+
+			
+		}
+		.toggle{
+			display: none;
+		}
+
+		.arrow-bottom{
+			position: absolute;
+			top: 25px;
+			right: 13px;
+			margin-left: 5px;
+			border-top: 4px solid #fff;
+			border-left: 4px solid transparent;
+			border-right: 4px solid transparent;
+			width: 1px;
+			height: 1px;
+		}
+
+	
+
+		@media(max-device-width:700px) {
+			
+			nav{
+				display: none;
+			}	
+			.main{
+				background-color: #255359;
+				width: 100%;
+				height: 42px;
+				margin: 0 auto;
+				float: right;
+				border-radius: 0px;
+			}
+			.nav ul{
+		
+				margin: 10px 0 -10px 0;
+				padding: 0;
+				box-shadow: none ;
+			}
+			.nav li{
+				float: none;
+			}
+			.nav li a{
+				padding: 0px 15px;
+				
+			}
+			.nav li:hover ul{
+				position: relative;
+				display: block;
+				background: orange;
+			}
+			.nav li:hover ul li{
+				background: orange;
+			}
+			.nav li:hover ul li a{
+				padding-left: 30px;
+			}
+
+			.toggle{
+				display: inline-block;
+				background: #255359;
+				padding: 9px 10px;
+				color:#000;
+			}
+
+			.arrow-bottom{
+				top: 20px;
+			}
+		
+		}
