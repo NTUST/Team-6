@@ -36,6 +36,9 @@ $(function(){
 			
 			$("#mo-country").text($(this).text());
 			$("#mo-country").attr("country",$(this).attr("country"));
+			$('.country-nav').slideToggle();
+			
+			$('.country-toggle').toggleClass("active");
 		});
 
 		$(".mo-cuisine-list-li").click(function(){
@@ -43,6 +46,8 @@ $(function(){
 			var kind=$(this).text();
 			$("#mo-catalog").text($(this).text())
 			showMenu(country , kind);
+			$('.catalog-nav').slideToggle();
+			$('.catalog-toggle').toggleClass("active");
 		});
 
 

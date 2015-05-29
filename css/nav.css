@@ -116,7 +116,7 @@
 			}	
 			.main{
 				background-color: #255359;
-				width: auto;
+				width: 50%;
 				height: 42px;
 				margin: 10px auto;
 				float: left;
@@ -130,9 +130,10 @@
 			}
 			.country-nav li{
 				float: none;
+				padding: 10px;
 			}
 			.country-nav li a{
-				padding: 0px 15px;
+				padding: 0px 35px;
 				
 			}
 			.country-nav li:hover ul{
@@ -157,6 +158,7 @@
 
 			.catalog-nav li{
 				float: none;
+				padding: 10px;
 			}
 			.catalog-nav li a{
 				padding: 0px 15px;
@@ -180,14 +182,14 @@
 				display: inline-block;
 				background: #255359;
 				padding: 9px 10px;
-				color:#000;
+				color:#fff;
 			}
 			.country-toggle{
 				width: 50%;
 				display: inline-block;
 				background: #255359;
 				padding: 9px 10px;
-				color:#000;
+				color:#fff;
 			}
 
 			.arrow-bottom{
