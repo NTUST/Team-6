@@ -7,9 +7,14 @@ $(function(){
 	var title;
 	var data;
 	function init(){
-		
-		showMenu("台灣", "肉類");
-		
+		var country = getUrlVars()["country"];
+        var kind = getUrlVars()["kind"];
+		if (country == null && kind == null)
+			showMenu("台灣", "肉類");
+		else{
+			showMenu(country , kind);
+			
+		}
 		
 	}
 	window.onload=init;
@@ -96,6 +101,20 @@ $(function(){
 
 
 	});
+
+	function getUrlVars()
+	{
+		var vars = [], hash;
+		var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+		for(var i = 0; i <hashes.length; i++)
+		{
+		    hash = hashes[i].split('=');
+		    vars.push(hash[0]);
+		    vars[hash[0]] = hash[1];
+		}
+		    return vars;
+	}
+
 
 	function getTxt(src){ //讀txt檔
 

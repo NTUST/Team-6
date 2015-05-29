@@ -197,21 +197,23 @@
 			
 		}
 		.newschef div{
+			width:150px;
 			float:right;
-			margin-right: 150px;
+			margin-right: 120px;
 		}
 		.newscuisine
 		{
 			width:400px;
 			height: 100px;
 			float:center;
-			margin: 10px auto;
+			margin: 10px auto; 
 			display: block;
 			
 		}
 		.newscuisine div{
+			width:240px;
 			float:right;
-			margin-right: 150px;
+			margin-right: 30px;
 		}
 		.chef_name
 		{
