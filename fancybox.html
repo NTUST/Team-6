@@ -4,16 +4,18 @@
 	
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 
 </head>
 
-	<body>
+	<body class = "fancybox">
+		<img id="image" src="" width="350px" height= auto>
 		<h1 id="name"></h1>
-        <p id="star"></p>
-        <p id="information"></p>
-        <p id="appliance"></p>
-        <img id="image" src="">
+        <p class = "fancyp" id="star"></p>
+        <p class = "fancyp" id="information"></p>
+        <p class = "fancyp" id="appliance"></p>
+        
 		<script>
 		//var text="initail";
 		var num;
@@ -54,7 +56,11 @@
                    
                         
                         $("#name").text(cata[0]);
-                        $("#star").text("難度："+cata[2]);
+                        var difficulty="";
+                        for (var j = 0 ; j < parseInt(cata[2]) ; j++){
+							difficulty += "★";
+						}
+                        $("#star").text("難度："+ difficulty);
                         $("#information").text("說明："+cata[1]);
                         $("#appliance").text("自備器材："+cata[3]);
                         $("#image").attr("src","./cuision/"+ country+"/"+kind +"/"+ cata[0] + ".jpg");

@@ -3,19 +3,22 @@ $(function(){
 	var work=["team1","team2"];
 	var hash;
 
+	var countrys = ["台灣" , "日本" , "韓國" ,"法國" , "義大利" , "美國"];
 	var node,oldNode,oldvalue;
 	var title;
 	var data;
 	function init(){
-		var country = getUrlVars()["country"];
+		var urlcountry = getUrlVars()["country"];
         var kind = getUrlVars()["kind"];
-		if (country == null && kind == null)
+		if (urlcountry == null && kind == null)
 			showMenu("台灣", "肉類");
 		else{
+			var country = countrys[parseInt(urlcountry)]
 			showMenu(country , kind);
 			
+			$(".ciusine-country").text(country);
+			$(".ciusine-country").attr("country",country);
 		}
-		
 	}
 	window.onload=init;
 
@@ -173,7 +176,7 @@ $(function(){
 				}
 				
         		$("#context").append(menu);
-
+        		
        
 
 		});
