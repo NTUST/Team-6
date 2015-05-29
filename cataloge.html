@@ -5,11 +5,13 @@
 	<title>家 儉 × 廚</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script type="text/javascript" src="./js/jquery.fancybox.js"></script>
         <script type="text/javascript" src="./js/fancybox.js"></script>
         <script type="text/javascript" src="./js/tab.js"></script>
   <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
 	
 </head>
 <body>
@@ -63,7 +65,41 @@
 			
 			
 		</div>
+		<div class="main mobile">
+					<span class="toggle">Menu</span>
+						<nav class="nav">
+							<ul>
+								<li>
+									<a id="mo-country" country="台灣">台灣菜</a>
+									<ul >
+										<li class="mo-counrty-select" country="台灣"><a >台灣菜</a></li>
+										<li class="mo-counrty-select" country="韓國"><a >韓國菜</a></li>
+										<li class="mo-counrty-select" country="日本"><a >日本菜</a></li>
+										<li class="mo-counrty-select" country="法國"><a >法國菜</a></li>
+										<li class="mo-counrty-select" country="義大利"><a >義大利菜</a></li>
+										<li class="mo-counrty-select" country="美國"><a >美國菜</a></li>
+									</ul>
+								
+								</li>
+								<li>
+									<a id="mo-catalog">肉類</a>
+									<ul >
+										<li class="mo-cuisine-list-li"><a >肉類</a></li>
+										<li class="mo-cuisine-list-li"><a >海鮮</a></li>
+										<li class="mo-cuisine-list-li"><a >湯類</a></li>
+										<li class="mo-cuisine-list-li"><a >蔬菜</a></li>
+										<li class="mo-cuisine-list-li"><a >素食</a></li>
+										<li class="mo-cuisine-list-li"><a >甜點</a></li>
+									</ul>
+								
+								</li>
+							</ul>
 
+						</nav>	
+
+
+				</div>
+				
 		<div class="cataloge"> 
 			<div class="cataloge-context">
 
@@ -79,36 +115,7 @@
 						<li class="cuisine-list-li">甜點</li>
 					</ul>	
 				</div>
-
-				<div class="cuisinelists mobile" >
-					<ul class="cuisine-list" >
-						
-						<li class="cuisine-kind">
-						
-							<select name="countryselection" id="countryselect">
-								<option value="台灣">台灣菜</option>
-								<option value="韓國">韓國菜</option>
-								<option value="日本">日本菜</option>
-								<option value="法國">法國菜</option>
-								<option value="義大利">義大利菜</option>
-								<option value="美國">美國菜</option>
-							</select>
-						</li>
-						
-						<li class="cuisine-kind">
-							
-							<select name="catalogy" id="catalogyselect">
-								<option value="肉類">肉類</option>
-								<option value="海鮮">海鮮</option>
-								<option value="湯類">湯類</option>
-								<option value="蔬菜">蔬菜</option>
-								<option value="素食">素食</option>
-								<option value="甜點">甜點</option>
-							</select>
-						</li>
-						
-					</ul>	
-				</div>
+				
 
 
 				<div id="context">
@@ -118,7 +125,7 @@
 
 			</div>
 		</div>
-		
+	
 	</div>
 	<div class="footer">
 		<div class="footer-info">

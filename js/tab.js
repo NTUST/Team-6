@@ -30,7 +30,23 @@ $(function(){
 			showMenu(country , kind);
 		});
 
-		$('#countryselect').change(function() {
+		$(".mo-counrty-select").click(function(){
+			//alert($(this).attr("country"));
+			showMenu($(this).attr("country"), "肉類");
+			
+			$("#mo-country").text($(this).text());
+			$("#mo-country").attr("country",$(this).attr("country"));
+		});
+
+		$(".mo-cuisine-list-li").click(function(){
+			var country=$("#mo-country").attr("country");
+			var kind=$(this).text();
+			$("#mo-catalog").text($(this).text())
+			showMenu(country , kind);
+		});
+
+
+		/*$('#countryselect').change(function() {
 		  
 		    var country = $('#countryselect').val();
 			
@@ -43,7 +59,8 @@ $(function(){
 			showMenu(country , kind);
 		    
 		});
-		
+		*/
+
 		var page=0;
 		//var cuisine=new array
 		$(".selects").click(function(){
@@ -110,7 +127,12 @@ $(function(){
 					for (var j = 0 ; j < parseInt(cata[2]) ; j++){
 						difficulty += "★";
 					}
-					menu += "<td>難度："+ difficulty + "</td>";
+					if($(window).width()>=700){	
+						menu += "<td>難度："+ difficulty + "</td>";
+					}else{
+						menu += "<td>"+ difficulty + "</td>";
+					}
+					
 					menu += "</tr>"	;					
 					menu += "<tr class=\"pc\" height=\"50px\">";
 
