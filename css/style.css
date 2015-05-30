@@ -541,6 +541,7 @@
 
 		img#image {
 			padding-left:70px; 
+			width:350px;
 		}
 
 		p.fancyp{
@@ -992,4 +993,10 @@
 				.content-mobile{
 					margin: 0 15px;
 				}
+
+
+			img#image {
+				padding-left:0;
+				width: 100%; 
+			}
 		}
