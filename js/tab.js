@@ -33,6 +33,7 @@ $(function(){
 			$(".ciusine-country").attr("country",country);
 			$("#mo-country").text(country);
 			$("#mo-country").attr("country",country);
+			$("#mo-catalog").text(kind);
 		}
 	}
 	window.onload=init;
@@ -69,7 +70,7 @@ $(function(){
 		$(".mo-cuisine-list-li").click(function(){
 			var country=$("#mo-country").attr("country");
 			var kind=$(this).text();
-			$("#mo-catalog").text($(this).text())
+			$("#mo-catalog").text($(this).text());
 			showMenu(country , kind);
 			$('.catalog-nav').slideToggle();
 			$('.catalog-toggle').toggleClass("active");
