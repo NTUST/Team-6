@@ -506,6 +506,11 @@
 			font-size: 20px;
 			margin-left:10px; 
 		}
+		.selected{
+			background: black;
+			color:white;
+			border: solid 2px #FFFFFF;
+		}
 		.select {
 			margin-top: -50px;
 		}
@@ -994,9 +999,14 @@
 					margin: 0 15px;
 				}
 
-
+			body.fancybox {
+				padding: 0;
+				width:auto;
+			}
 			img#image {
+				float: center;
 				padding-left:0;
-				width: auto; 
+				margin: 10px 5%;
+				width: 90%; 
 			}
 		}

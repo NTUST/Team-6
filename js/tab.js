@@ -4,20 +4,35 @@ $(function(){
 	var hash;
 
 	var countrys = ["台灣" , "日本" , "韓國" ,"法國" , "義大利" , "美國"];
+	var kinds =["肉類","海鮮","湯類","蔬菜","素食","甜點"];
 	var node,oldNode,oldvalue;
 	var title;
 	var data;
 	function init(){
 		var urlcountry = getUrlVars()["country"];
-        var kind = getUrlVars()["kind"];
+        var urlkind = getUrlVars()["kind"];
 		if (urlcountry == null && kind == null)
 			showMenu("台灣", "肉類");
 		else{
-			var country = countrys[parseInt(urlcountry)]
+			var country = countrys[parseInt(urlcountry)];
+			var kind=kinds[parseInt(urlkind)];
 			showMenu(country , kind);
+			var node = $(".selected");
+			$(".selected").removeClass("selected");
+			for(var i=1;i<7;i++){
+				if(node.text()==kind){
+					node.addClass("selected");
+					break;
+				}
+				node=node.next(".cuisine-list-li");
+			}
 			
+			
+
 			$(".ciusine-country").text(country);
 			$(".ciusine-country").attr("country",country);
+			$("#mo-country").text(country);
+			$("#mo-country").attr("country",country);
 		}
 	}
 	window.onload=init;
@@ -36,6 +51,8 @@ $(function(){
 			var kind=$(this).text();
 			
 			showMenu(country , kind);
+			$(".selected").removeClass("selected");
+			$(this).addClass("selected");
 		});
 
 		$(".mo-counrty-select").click(function(){
@@ -90,7 +107,7 @@ $(function(){
 		}
 			
 	$(".various").fancybox({
-				maxWidth	: 1000,
+				maxWidth	: 300,
 				maxHeight	: 600,
 				fitToView	: false,
 				width 		:'100%',
