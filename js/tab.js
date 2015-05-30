@@ -107,7 +107,7 @@ $(function(){
 		}
 			
 	$(".various").fancybox({
-				maxWidth	: 300,
+				maxWidth	: 800,
 				maxHeight	: 600,
 				fitToView	: false,
 				width 		:'100%',
