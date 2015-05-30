@@ -561,7 +561,9 @@
 		/*cataloge-end*/
 
 		/*contect*/
-
+		.order-content{
+			height: 900px;
+		}
 		.contect{
 			margin: 0px auto;
 			width: 1000px;
@@ -1009,4 +1011,23 @@
 				margin: 10px 5%;
 				width: 90%; 
 			}
+			.order-content{
+				height: 900px;
+			}
+			.country-list-li   {
+	    		display: block;
+	    		width: 120px;
+	    		margin: 5px 5px;
+	    		text-align: center;
+	    		background-color: #255359;
+	    		cursor: pointer;
+	    		text-decoration: none;
+	    		color:orange;
+	    		font-size: 20px;
+	    		padding: 10px 0;
+	    		border:  solid 3px orange;
+	    		display: inline;
+			    float:left;
+
+			}	
 		}
