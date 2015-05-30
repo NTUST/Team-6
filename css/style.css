@@ -997,6 +997,6 @@
 
 			img#image {
 				padding-left:0;
-				width: 100%; 
+				width: auto; 
 			}
 		}
