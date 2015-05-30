@@ -45,6 +45,9 @@ $(function(){
 			showMenu($(this).attr("country") , "肉類");
 			$(".ciusine-country").text($(this).attr("country"));
 			$(".ciusine-country").attr("country",$(this).attr("country"));
+			
+			$(".selected").removeClass("selected");
+			$("#first-list").addClass("selected");
 		});
 
 		$(".cuisine-list-li").click(function(){
@@ -65,6 +68,7 @@ $(function(){
 			$('.country-nav').slideToggle();
 			
 			$('.country-toggle').toggleClass("active");
+
 		});
 
 		$(".mo-cuisine-list-li").click(function(){
